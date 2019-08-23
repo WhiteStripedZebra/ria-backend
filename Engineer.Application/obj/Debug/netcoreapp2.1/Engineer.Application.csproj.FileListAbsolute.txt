@@ -1,12 +1,14 @@
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Application\bin\Debug\netcoreapp2.1\Engineer.Application.deps.json
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Application\bin\Debug\netcoreapp2.1\Engineer.Application.runtimeconfig.json
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Application\bin\Debug\netcoreapp2.1\Engineer.Application.runtimeconfig.dev.json
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Application\bin\Debug\netcoreapp2.1\Engineer.Application.dll
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Application\bin\Debug\netcoreapp2.1\Engineer.Application.pdb
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Application\bin\Debug\netcoreapp2.1\Engineer.Domain.dll
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Application\bin\Debug\netcoreapp2.1\Engineer.Mapping.dll
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Application\bin\Debug\netcoreapp2.1\Engineer.Persistence.dll
-C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Application\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Application\bin\Debug\netcoreapp2.1\Engineer.Domain.pdb
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Application\bin\Debug\netcoreapp2.1\Engineer.Mapping.pdb
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Application\bin\Debug\netcoreapp2.1\Engineer.Persistence.pdb
-C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Application\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.SqlServer.xml
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Application\obj\Debug\netcoreapp2.1\Engineer.Application.csprojAssemblyReference.cache
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Application\obj\Debug\netcoreapp2.1\Engineer.Application.csproj.CoreCompileInputs.cache
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Application\obj\Debug\netcoreapp2.1\Engineer.Application.AssemblyInfoInputs.cache
@@ -14,7 +16,3 @@ C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.App
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Application\obj\Debug\netcoreapp2.1\Engineer.Application.csproj.CopyComplete
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Application\obj\Debug\netcoreapp2.1\Engineer.Application.dll
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Application\obj\Debug\netcoreapp2.1\Engineer.Application.pdb
-C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Application\bin\Debug\netcoreapp2.1\Engineer.Application.runtimeconfig.json
-C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Application\bin\Debug\netcoreapp2.1\Engineer.Application.runtimeconfig.dev.json
-C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Application\bin\Debug\netcoreapp2.1\Engineer.Mapping.dll
-C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Application\bin\Debug\netcoreapp2.1\Engineer.Mapping.pdb

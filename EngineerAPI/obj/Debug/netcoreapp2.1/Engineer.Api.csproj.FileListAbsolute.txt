@@ -9,13 +9,14 @@ C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\bin\Debug\netcoreapp2.1\Engineer.Mapping.dll
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\bin\Debug\netcoreapp2.1\Engineer.Persistence.dll
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\bin\Debug\netcoreapp2.1\Engineer.Application.pdb
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\bin\Debug\netcoreapp2.1\Engineer.Domain.pdb
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\bin\Debug\netcoreapp2.1\Engineer.Mapping.pdb
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\bin\Debug\netcoreapp2.1\Engineer.Persistence.pdb
-C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\bin\Debug\netcoreapp2.1\Engineer.Domain.pdb
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.csprojAssemblyReference.cache
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.csproj.CoreCompileInputs.cache
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.RazorAssemblyInfo.cache
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.RazorAssemblyInfo.cs
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.AssemblyInfoInputs.cache
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.AssemblyInfo.cs
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.RazorTargetAssemblyInfo.cache
@@ -23,4 +24,3 @@ C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.dll
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.xml
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.pdb
-C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
