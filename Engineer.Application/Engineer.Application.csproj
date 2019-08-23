@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Engineer.Domain\Engineer.Domain.csproj" />
+    <ProjectReference Include="..\Engineer.Mappings\Engineer.Mapping.csproj" />
     <ProjectReference Include="..\Engineer.Persistence\Engineer.Persistence.csproj" />
   </ItemGroup>
 

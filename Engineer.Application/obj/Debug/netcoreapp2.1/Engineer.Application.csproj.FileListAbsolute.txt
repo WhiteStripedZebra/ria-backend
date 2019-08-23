@@ -16,3 +16,5 @@ C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.App
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Application\obj\Debug\netcoreapp2.1\Engineer.Application.pdb
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Application\bin\Debug\netcoreapp2.1\Engineer.Application.runtimeconfig.json
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Application\bin\Debug\netcoreapp2.1\Engineer.Application.runtimeconfig.dev.json
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Application\bin\Debug\netcoreapp2.1\Engineer.Mapping.dll
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Application\bin\Debug\netcoreapp2.1\Engineer.Mapping.pdb

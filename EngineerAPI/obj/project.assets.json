@@ -4455,6 +4455,7 @@
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
           "Engineer.Domain": "1.0.0",
+          "Engineer.Mapping": "1.0.0",
           "Engineer.Persistence": "1.0.0",
           "MediatR": "7.0.0",
           "Microsoft.EntityFrameworkCore": "2.1.11",
@@ -12115,6 +12116,7 @@
     ".NETCoreApp,Version=v2.1": [
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 7.0.0",
       "Engineer.Application >= 1.0.0",
+      "Engineer.Domain >= 1.0.0",
       "Engineer.Mapping >= 1.0.0",
       "Engineer.Persistence >= 1.0.0",
       "MediatR >= 7.0.0",
@@ -12160,6 +12162,9 @@
           "projectReferences": {
             "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilAPI\\EngineerAPI\\Engineer.Application\\Engineer.Application.csproj": {
               "projectPath": "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilAPI\\EngineerAPI\\Engineer.Application\\Engineer.Application.csproj"
+            },
+            "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilAPI\\EngineerAPI\\Engineer.Domain\\Engineer.Domain.csproj": {
+              "projectPath": "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilAPI\\EngineerAPI\\Engineer.Domain\\Engineer.Domain.csproj"
             },
             "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilAPI\\EngineerAPI\\Engineer.Mappings\\Engineer.Mapping.csproj": {
               "projectPath": "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilAPI\\EngineerAPI\\Engineer.Mappings\\Engineer.Mapping.csproj"

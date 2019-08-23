@@ -26,6 +26,7 @@
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "7.0.0",
           "Engineer.Application": "1.0.0",
+          "Engineer.Domain": "1.0.0",
           "Engineer.Mapping": "1.0.0",
           "Engineer.Persistence": "1.0.0",
           "MediatR": "7.0.0",
@@ -484,6 +485,7 @@
       "Engineer.Application/1.0.0": {
         "dependencies": {
           "Engineer.Domain": "1.0.0",
+          "Engineer.Mapping": "1.0.0",
           "Engineer.Persistence": "1.0.0",
           "MediatR": "7.0.0",
           "Microsoft.EntityFrameworkCore": "2.1.11",
