@@ -1,0 +1,15 @@
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\bin\Release\netcoreapp2.1\EngineerAPI.deps.json
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\bin\Release\netcoreapp2.1\EngineerAPI.runtimeconfig.json
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\bin\Release\netcoreapp2.1\EngineerAPI.runtimeconfig.dev.json
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\bin\Release\netcoreapp2.1\EngineerAPI.dll
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\bin\Release\netcoreapp2.1\EngineerAPI.pdb
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\obj\Release\netcoreapp2.1\EngineerAPI.csproj.CoreCompileInputs.cache
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\obj\Release\netcoreapp2.1\EngineerAPI.RazorAssemblyInfo.cache
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\obj\Release\netcoreapp2.1\EngineerAPI.RazorAssemblyInfo.cs
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\obj\Release\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\obj\Release\netcoreapp2.1\EngineerAPI.AssemblyInfoInputs.cache
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\obj\Release\netcoreapp2.1\EngineerAPI.AssemblyInfo.cs
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\obj\Release\netcoreapp2.1\EngineerAPI.RazorTargetAssemblyInfo.cache
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\obj\Release\netcoreapp2.1\EngineerAPI.dll
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\obj\Release\netcoreapp2.1\EngineerAPI.pdb
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\obj\Release\netcoreapp2.1\EngineerAPI.csprojAssemblyReference.cache

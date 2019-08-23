@@ -1,0 +1,9 @@
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Application.Tests\bin\Debug\netcoreapp2.1\Engineer.Application.Tests.deps.json
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Application.Tests\bin\Debug\netcoreapp2.1\Engineer.Application.Tests.dll
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Application.Tests\obj\Debug\netcoreapp2.1\Engineer.Application.Tests.csprojAssemblyReference.cache
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Application.Tests\obj\Debug\netcoreapp2.1\Engineer.Application.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Application.Tests\obj\Debug\netcoreapp2.1\Engineer.Application.Tests.AssemblyInfoInputs.cache
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Application.Tests\obj\Debug\netcoreapp2.1\Engineer.Application.Tests.AssemblyInfo.cs
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Application.Tests\bin\Debug\netcoreapp2.1\Engineer.Application.Tests.pdb
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Application.Tests\obj\Debug\netcoreapp2.1\Engineer.Application.Tests.dll
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Application.Tests\obj\Debug\netcoreapp2.1\Engineer.Application.Tests.pdb

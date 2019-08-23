@@ -1,0 +1,12 @@
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Mappings\bin\Debug\netcoreapp2.1\Engineer.Mapping.deps.json
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Mappings\bin\Debug\netcoreapp2.1\Engineer.Mapping.dll
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Mappings\bin\Debug\netcoreapp2.1\Engineer.Mapping.pdb
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Mappings\bin\Debug\netcoreapp2.1\Engineer.Domain.dll
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Mappings\bin\Debug\netcoreapp2.1\Engineer.Domain.pdb
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Mappings\obj\Debug\netcoreapp2.1\Engineer.Mapping.csprojAssemblyReference.cache
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Mappings\obj\Debug\netcoreapp2.1\Engineer.Mapping.csproj.CoreCompileInputs.cache
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Mappings\obj\Debug\netcoreapp2.1\Engineer.Mapping.AssemblyInfoInputs.cache
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Mappings\obj\Debug\netcoreapp2.1\Engineer.Mapping.AssemblyInfo.cs
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Mappings\obj\Debug\netcoreapp2.1\Engineer.Mapping.csproj.CopyComplete
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Mappings\obj\Debug\netcoreapp2.1\Engineer.Mapping.dll
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Mappings\obj\Debug\netcoreapp2.1\Engineer.Mapping.pdb
