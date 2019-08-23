@@ -15,15 +15,6 @@
           "lib/netstandard2.0/AutoMapper.dll": {}
         }
       },
-      "MediatR/7.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/MediatR.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/MediatR.dll": {}
-        }
-      },
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
@@ -66,22 +57,6 @@
       "Microsoft.EntityFrameworkCore.Analyzers/2.1.11": {
         "type": "package"
       },
-      "Microsoft.EntityFrameworkCore.Design/2.1.11": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.CSharp": "4.5.0",
-          "Microsoft.EntityFrameworkCore.Relational": "2.1.11"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.dll": {}
-        },
-        "build": {
-          "build/netcoreapp2.0/Microsoft.EntityFrameworkCore.Design.props": {}
-        }
-      },
       "Microsoft.EntityFrameworkCore.Relational/2.1.11": {
         "type": "package",
         "dependencies": {
@@ -105,18 +80,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {}
-        }
-      },
-      "Microsoft.EntityFrameworkCore.Tools/2.1.11": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "2.1.11"
-        },
-        "compile": {
-          "lib/netstandard2.0/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/_._": {}
         }
       },
       "Microsoft.Extensions.Caching.Abstractions/2.1.1": {
@@ -971,10 +934,6 @@
       "Engineer.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
-        "dependencies": {
-          "MediatR": "7.0.0",
-          "Microsoft.EntityFrameworkCore": "2.1.11"
-        },
         "compile": {
           "bin/placeholder/Engineer.Domain.dll": {}
         },
@@ -1002,7 +961,6 @@
         "dependencies": {
           "Engineer.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "2.1.11",
-          "Microsoft.EntityFrameworkCore.Design": "2.1.11",
           "Microsoft.EntityFrameworkCore.Relational": "2.1.11",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.11"
         },
@@ -1031,19 +989,6 @@
         "lib/netstandard2.0/AutoMapper.dll",
         "lib/netstandard2.0/AutoMapper.pdb",
         "lib/netstandard2.0/AutoMapper.xml"
-      ]
-    },
-    "MediatR/7.0.0": {
-      "sha512": "sgfHxkBsmMlHOD564SnLqTvSbAuGlFiZfc6ybxBSI1wYV/2u+Y5TXtFoIhCISFg5/s/6aMvB338QC2JseHsjTA==",
-      "type": "package",
-      "path": "mediatr/7.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net461/MediatR.dll",
-        "lib/netstandard2.0/MediatR.dll",
-        "mediatr.7.0.0.nupkg.sha512",
-        "mediatr.nuspec"
       ]
     },
     "Microsoft.CSharp/4.5.0": {
@@ -1152,23 +1097,6 @@
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Design/2.1.11": {
-      "sha512": "mj7Wj+I/x0YQ4YJwN4Dws4LdWau0RPRQ7pHWvfoCLFOMVKPPEOq0Yx8LIl4RHJNZYLEevqDHLL+4q9tC/mKaMQ==",
-      "type": "package",
-      "path": "microsoft.entityframeworkcore.design/2.1.11",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/net461/Microsoft.EntityFrameworkCore.Design.props",
-        "build/netcoreapp2.0/Microsoft.EntityFrameworkCore.Design.props",
-        "lib/net461/Microsoft.EntityFrameworkCore.Design.dll",
-        "lib/net461/Microsoft.EntityFrameworkCore.Design.xml",
-        "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.dll",
-        "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.xml",
-        "microsoft.entityframeworkcore.design.2.1.11.nupkg.sha512",
-        "microsoft.entityframeworkcore.design.nuspec"
-      ]
-    },
     "Microsoft.EntityFrameworkCore.Relational/2.1.11": {
       "sha512": "Uj+zIPa/F5lEl+dVyDpUvFamdp4XnvoB1LbrF/UwI5zgMzA990TxbASGAWdfzIV0ITg5txtYuN+5mZ1BY5FXIw==",
       "type": "package",
@@ -1193,30 +1121,6 @@
         "lib/netstandard2.0/Microsoft.EntityFrameworkCore.SqlServer.xml",
         "microsoft.entityframeworkcore.sqlserver.2.1.11.nupkg.sha512",
         "microsoft.entityframeworkcore.sqlserver.nuspec"
-      ]
-    },
-    "Microsoft.EntityFrameworkCore.Tools/2.1.11": {
-      "sha512": "SSgYirC0g+f11mpYuhcjcgYEikpNNVVhULhqvRqKsAS4myDElUbD1ud5Y/g8R8559Y+vhJ8zyo/6a6F0aeTPIQ==",
-      "type": "package",
-      "path": "microsoft.entityframeworkcore.tools/2.1.11",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/_._",
-        "microsoft.entityframeworkcore.tools.2.1.11.nupkg.sha512",
-        "microsoft.entityframeworkcore.tools.nuspec",
-        "tools/EntityFrameworkCore.PowerShell2.psd1",
-        "tools/EntityFrameworkCore.PowerShell2.psm1",
-        "tools/EntityFrameworkCore.psd1",
-        "tools/EntityFrameworkCore.psm1",
-        "tools/about_EntityFrameworkCore.help.txt",
-        "tools/init.ps1",
-        "tools/install.ps1",
-        "tools/net461/any/ef.exe",
-        "tools/net461/win-x86/ef.exe",
-        "tools/netcoreapp2.0/any/ef.dll",
-        "tools/netcoreapp2.0/any/ef.runtimeconfig.json"
       ]
     },
     "Microsoft.Extensions.Caching.Abstractions/2.1.1": {
@@ -3739,10 +3643,6 @@
       "Engineer.Domain >= 1.0.0",
       "Engineer.Mapping >= 1.0.0",
       "Engineer.Persistence >= 1.0.0",
-      "MediatR >= 7.0.0",
-      "Microsoft.EntityFrameworkCore >= 2.1.11",
-      "Microsoft.EntityFrameworkCore.Design >= 2.1.11",
-      "Microsoft.EntityFrameworkCore.Tools >= 2.1.11",
       "Microsoft.NETCore.App >= 2.1.0"
     ]
   },
@@ -3797,24 +3697,6 @@
     "frameworks": {
       "netcoreapp2.1": {
         "dependencies": {
-          "MediatR": {
-            "target": "Package",
-            "version": "[7.0.0, )"
-          },
-          "Microsoft.EntityFrameworkCore": {
-            "target": "Package",
-            "version": "[2.1.11, )"
-          },
-          "Microsoft.EntityFrameworkCore.Design": {
-            "target": "Package",
-            "version": "[2.1.11, )"
-          },
-          "Microsoft.EntityFrameworkCore.Tools": {
-            "include": "Runtime, Build, Native, ContentFiles, Analyzers",
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "[2.1.11, )"
-          },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",

@@ -5,16 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MediatR" Version="7.0.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.11" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.1.11" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.11">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-    </PackageReference>
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Engineer.Domain\Engineer.Domain.csproj" />
     <ProjectReference Include="..\Engineer.Mappings\Engineer.Mapping.csproj" />
     <ProjectReference Include="..\Engineer.Persistence\Engineer.Persistence.csproj" />

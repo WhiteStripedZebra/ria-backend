@@ -1,6 +1,7 @@
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Domain\bin\Debug\netcoreapp2.1\Engineer.Domain.deps.json
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Domain\bin\Debug\netcoreapp2.1\Engineer.Domain.dll
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Domain\bin\Debug\netcoreapp2.1\Engineer.Domain.pdb
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Domain\obj\Debug\netcoreapp2.1\Engineer.Domain.csprojAssemblyReference.cache
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Domain\obj\Debug\netcoreapp2.1\Engineer.Domain.csproj.CoreCompileInputs.cache
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Domain\obj\Debug\netcoreapp2.1\Engineer.Domain.AssemblyInfoInputs.cache
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Domain\obj\Debug\netcoreapp2.1\Engineer.Domain.AssemblyInfo.cs

@@ -28,28 +28,6 @@
           "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
-      "MediatR/7.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/MediatR.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/MediatR.dll": {}
-        }
-      },
-      "MediatR.Extensions.Microsoft.DependencyInjection/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "MediatR": "7.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/MediatR.Extensions.Microsoft.DependencyInjection.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/MediatR.Extensions.Microsoft.DependencyInjection.dll": {}
-        }
-      },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "type": "package",
         "dependencies": {
@@ -1170,7 +1148,7 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.Razor.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Razor.Design/2.1.2": {
+      "Microsoft.AspNetCore.Razor.Design/2.1.1": {
         "type": "package",
         "build": {
           "build/netstandard2.0/Microsoft.AspNetCore.Razor.Design.props": {}
@@ -1691,11 +1669,11 @@
       "Microsoft.EntityFrameworkCore.Analyzers/2.1.11": {
         "type": "package"
       },
-      "Microsoft.EntityFrameworkCore.Design/2.1.11": {
+      "Microsoft.EntityFrameworkCore.Design/2.1.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.5.0",
-          "Microsoft.EntityFrameworkCore.Relational": "2.1.11"
+          "Microsoft.EntityFrameworkCore.Relational": "2.1.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.dll": {}
@@ -1744,10 +1722,10 @@
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Tools/2.1.11": {
+      "Microsoft.EntityFrameworkCore.Tools/2.1.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "2.1.11"
+          "Microsoft.EntityFrameworkCore.Design": "2.1.1"
         },
         "compile": {
           "lib/netstandard2.0/_._": {}
@@ -4456,10 +4434,7 @@
         "dependencies": {
           "Engineer.Domain": "1.0.0",
           "Engineer.Mapping": "1.0.0",
-          "Engineer.Persistence": "1.0.0",
-          "MediatR": "7.0.0",
-          "Microsoft.EntityFrameworkCore": "2.1.11",
-          "Microsoft.EntityFrameworkCore.Design": "2.1.11"
+          "Engineer.Persistence": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Engineer.Application.dll": {}
@@ -4471,10 +4446,6 @@
       "Engineer.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
-        "dependencies": {
-          "MediatR": "7.0.0",
-          "Microsoft.EntityFrameworkCore": "2.1.11"
-        },
         "compile": {
           "bin/placeholder/Engineer.Domain.dll": {}
         },
@@ -4502,7 +4473,6 @@
         "dependencies": {
           "Engineer.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "2.1.11",
-          "Microsoft.EntityFrameworkCore.Design": "2.1.11",
           "Microsoft.EntityFrameworkCore.Relational": "2.1.11",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.11"
         },
@@ -4544,31 +4514,6 @@
         "automapper.extensions.microsoft.dependencyinjection.nuspec",
         "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll",
         "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.pdb"
-      ]
-    },
-    "MediatR/7.0.0": {
-      "sha512": "sgfHxkBsmMlHOD564SnLqTvSbAuGlFiZfc6ybxBSI1wYV/2u+Y5TXtFoIhCISFg5/s/6aMvB338QC2JseHsjTA==",
-      "type": "package",
-      "path": "mediatr/7.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net461/MediatR.dll",
-        "lib/netstandard2.0/MediatR.dll",
-        "mediatr.7.0.0.nupkg.sha512",
-        "mediatr.nuspec"
-      ]
-    },
-    "MediatR.Extensions.Microsoft.DependencyInjection/7.0.0": {
-      "sha512": "DRf8jBnjBg84da1L1L0YmwqkhCV+UJTg7bTBHOhleWrLfrtSK5h5aNeE1HOofs1Afisq03B6H2C10NmS47gmqA==",
-      "type": "package",
-      "path": "mediatr.extensions.microsoft.dependencyinjection/7.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/MediatR.Extensions.Microsoft.DependencyInjection.dll",
-        "mediatr.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
-        "mediatr.extensions.microsoft.dependencyinjection.nuspec"
       ]
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -5471,10 +5416,10 @@
         "microsoft.aspnetcore.razor.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Razor.Design/2.1.2": {
-      "sha512": "fe1+dpy+eM4IX1zodsvkihO1Spuj0NecfStWzvkYoMo7/ziOsqSv4vFK36ZpBfHa4gpdCEwaU46EPzdq+ZDYhQ==",
+    "Microsoft.AspNetCore.Razor.Design/2.1.1": {
+      "sha512": "1XHObHLx6A0/57ZmLG9gfKMO/Z/gQjRXPFWQDMlPZGYwcfgufvSdmI2+RYvR5DGkbba9HIHC35ClNQ2yVNIohw==",
       "type": "package",
-      "path": "microsoft.aspnetcore.razor.design/2.1.2",
+      "path": "microsoft.aspnetcore.razor.design/2.1.1",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -5482,7 +5427,7 @@
         "build/netstandard2.0/Microsoft.AspNetCore.Razor.Design.CodeGeneration.targets",
         "build/netstandard2.0/Microsoft.AspNetCore.Razor.Design.props",
         "buildMultiTargeting/Microsoft.AspNetCore.Razor.Design.props",
-        "microsoft.aspnetcore.razor.design.2.1.2.nupkg.sha512",
+        "microsoft.aspnetcore.razor.design.2.1.1.nupkg.sha512",
         "microsoft.aspnetcore.razor.design.nuspec",
         "tasks/net46/Microsoft.AspNetCore.Razor.Tasks.dll",
         "tasks/netstandard2.0/Microsoft.AspNetCore.Razor.Tasks.dll",
@@ -6017,10 +5962,10 @@
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Design/2.1.11": {
-      "sha512": "mj7Wj+I/x0YQ4YJwN4Dws4LdWau0RPRQ7pHWvfoCLFOMVKPPEOq0Yx8LIl4RHJNZYLEevqDHLL+4q9tC/mKaMQ==",
+    "Microsoft.EntityFrameworkCore.Design/2.1.1": {
+      "sha512": "Bu5c0Eec+tSW1PA0NxDgxzF0cMQjeGQC5RtBtMm3heow2J7X+2LhdkGFPr4IAL6bFLHJiVcE3csng3i6fB/PtA==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.design/2.1.11",
+      "path": "microsoft.entityframeworkcore.design/2.1.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6030,7 +5975,7 @@
         "lib/net461/Microsoft.EntityFrameworkCore.Design.xml",
         "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.dll",
         "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.xml",
-        "microsoft.entityframeworkcore.design.2.1.11.nupkg.sha512",
+        "microsoft.entityframeworkcore.design.2.1.1.nupkg.sha512",
         "microsoft.entityframeworkcore.design.nuspec"
       ]
     },
@@ -6073,16 +6018,16 @@
         "microsoft.entityframeworkcore.sqlserver.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Tools/2.1.11": {
-      "sha512": "SSgYirC0g+f11mpYuhcjcgYEikpNNVVhULhqvRqKsAS4myDElUbD1ud5Y/g8R8559Y+vhJ8zyo/6a6F0aeTPIQ==",
+    "Microsoft.EntityFrameworkCore.Tools/2.1.1": {
+      "sha512": "Qfz8Au39cALAgxzvfoz6aPkmTuaFmlDYeUjCecaNlQ5x2jxs1rACtWddA5Yu4D3YSsHuHqttgZA6tzKKNVo9mg==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.tools/2.1.11",
+      "path": "microsoft.entityframeworkcore.tools/2.1.1",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/_._",
-        "microsoft.entityframeworkcore.tools.2.1.11.nupkg.sha512",
+        "microsoft.entityframeworkcore.tools.2.1.1.nupkg.sha512",
         "microsoft.entityframeworkcore.tools.nuspec",
         "tools/EntityFrameworkCore.PowerShell2.psd1",
         "tools/EntityFrameworkCore.PowerShell2.psm1",
@@ -12120,13 +12065,8 @@
       "Engineer.Domain >= 1.0.0",
       "Engineer.Mapping >= 1.0.0",
       "Engineer.Persistence >= 1.0.0",
-      "MediatR >= 7.0.0",
-      "MediatR.Extensions.Microsoft.DependencyInjection >= 7.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
-      "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.EntityFrameworkCore >= 2.1.11",
-      "Microsoft.EntityFrameworkCore.Design >= 2.1.11",
-      "Microsoft.EntityFrameworkCore.Tools >= 2.1.11",
       "Microsoft.NETCore.App >= 2.1.0",
       "Swashbuckle.AspNetCore >= 5.0.0-rc2"
     ]
@@ -12189,36 +12129,13 @@
             "target": "Package",
             "version": "[7.0.0, )"
           },
-          "MediatR": {
-            "target": "Package",
-            "version": "[7.0.0, )"
-          },
-          "MediatR.Extensions.Microsoft.DependencyInjection": {
-            "target": "Package",
-            "version": "[7.0.0, )"
-          },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.1, )",
             "autoReferenced": true
           },
-          "Microsoft.AspNetCore.Razor.Design": {
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "[2.1.2, )"
-          },
           "Microsoft.EntityFrameworkCore": {
-            "target": "Package",
-            "version": "[2.1.11, )"
-          },
-          "Microsoft.EntityFrameworkCore.Design": {
-            "target": "Package",
-            "version": "[2.1.11, )"
-          },
-          "Microsoft.EntityFrameworkCore.Tools": {
-            "include": "Runtime, Build, Native, ContentFiles, Analyzers",
-            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.11, )"
           },
