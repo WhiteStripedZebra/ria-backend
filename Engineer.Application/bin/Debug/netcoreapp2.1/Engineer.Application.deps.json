@@ -430,8 +430,7 @@
       "Engineer.Mapping/1.0.0": {
         "dependencies": {
           "AutoMapper": "9.0.0",
-          "Engineer.Domain": "1.0.0",
-          "Microsoft.EntityFrameworkCore.Design": "2.1.11"
+          "Engineer.Domain": "1.0.0"
         },
         "runtime": {
           "Engineer.Mapping.dll": {}
@@ -442,6 +441,7 @@
           "Engineer.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "2.1.11",
           "Microsoft.EntityFrameworkCore.Design": "2.1.11",
+          "Microsoft.EntityFrameworkCore.Relational": "2.1.11",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.1.0"
         },
         "runtime": {

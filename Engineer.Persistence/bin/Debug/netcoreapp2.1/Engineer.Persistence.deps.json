@@ -11,6 +11,7 @@
           "Engineer.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "2.1.11",
           "Microsoft.EntityFrameworkCore.Design": "2.1.11",
+          "Microsoft.EntityFrameworkCore.Relational": "2.1.11",
           "Microsoft.EntityFrameworkCore.Tools": "2.1.11",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.1.0"
         },
