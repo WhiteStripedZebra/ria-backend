@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Engineer.Application", "Eng
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Engineer.Persistence", "Engineer.Persistence\Engineer.Persistence.csproj", "{935C979F-2715-47ED-B43E-29EB0A3DB01A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Engineer.Mapping", "Engineer.Mappings\Engineer.Mapping.csproj", "{0396C4D4-F007-4288-BB7E-D0CEF54AF956}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Engineer.Mapping", "Engineer.Mappings\Engineer.Mapping.csproj", "{0396C4D4-F007-4288-BB7E-D0CEF54AF956}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
