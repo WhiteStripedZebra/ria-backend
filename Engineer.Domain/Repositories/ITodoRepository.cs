@@ -14,5 +14,9 @@ namespace Engineer.Domain.Repositories
         void AddToDo(ToDo entity);
 
         Task<bool> SaveChangesAsync();
+
+        Task<bool> UpdateTask(ToDo entity);
+
+        Task<bool> DeleteTask(Guid id);
     }
 }

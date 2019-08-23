@@ -44,5 +44,26 @@ namespace Engineer.Application.Repository.Tasks
         {
             return (await _context.SaveChangesAsync() > 0);
         }
+
+        public async Task<bool> UpdateTask(ToDo entity)
+        {
+            _context.Update(entity);
+
+            return (await _context.SaveChangesAsync() > 0);
+        }
+
+        public async Task<bool> DeleteTask(Guid id)
+        {
+            var entity = await GetTaskAsync(id);
+
+            if (entity == null)
+            {
+                throw new ArgumentNullException();
+            }
+
+            _context.Tasks.Remove(entity);
+
+            return (await _context.SaveChangesAsync() > 0);
+        }
     }
 }

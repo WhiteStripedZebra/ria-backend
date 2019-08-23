@@ -2,10 +2,8 @@ C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Per
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Persistence\bin\Debug\netcoreapp2.1\Engineer.Persistence.dll
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Persistence\bin\Debug\netcoreapp2.1\Engineer.Persistence.pdb
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Persistence\bin\Debug\netcoreapp2.1\Engineer.Domain.dll
-C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Persistence\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Persistence\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Persistence\bin\Debug\netcoreapp2.1\Engineer.Domain.pdb
-C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Persistence\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.Relational.xml
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Persistence\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.SqlServer.xml
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Persistence\obj\Debug\netcoreapp2.1\Engineer.Persistence.csprojAssemblyReference.cache
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Persistence\obj\Debug\netcoreapp2.1\Engineer.Persistence.csproj.CoreCompileInputs.cache
@@ -14,3 +12,5 @@ C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Per
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Persistence\obj\Debug\netcoreapp2.1\Engineer.Persistence.csproj.CopyComplete
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Persistence\obj\Debug\netcoreapp2.1\Engineer.Persistence.dll
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Persistence\obj\Debug\netcoreapp2.1\Engineer.Persistence.pdb
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Persistence\bin\Debug\netcoreapp2.1\Engineer.Persistence.runtimeconfig.json
+C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Persistence\bin\Debug\netcoreapp2.1\Engineer.Persistence.runtimeconfig.dev.json

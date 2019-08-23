@@ -4,7 +4,7 @@ namespace Engineer.Domain.Models.Todo
 {
     public class ToDoDTO
     {
-        //public Guid Id { get; set; }
+        public Guid Id { get; set; }
 
         public DateTimeOffset CreatedAt { get; set; }
 

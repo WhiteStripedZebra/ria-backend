@@ -23,7 +23,6 @@ namespace Engineer.Api.Controllers
             _mapper = mapper;
         }
 
-
         /// <summary>
         /// Gets a list of Tasks
         /// </summary>
@@ -79,16 +78,37 @@ namespace Engineer.Api.Controllers
             return CreatedAtAction(nameof(GetToDo), new {id = entity.Id}, entity);
         }
 
-        // PUT api/values/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<IActionResult> UpdateToDo(Guid id, [FromBody] CreateToDoDTO todo)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+
+            var entity = await _repository.GetTaskAsync(id);
+
+            if (entity == null)
+            {
+                return NotFound();
+            }
+
+            var updateEntity = _mapper.Map<ToDo>(todo);
+
+            entity.IsCompleted = updateEntity.IsCompleted;
+            entity.Task = updateEntity.Task;
+
+            await _repository.UpdateTask(entity);
+
+            return NoContent();
         }
 
-        // DELETE api/values/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<IActionResult> DeleteTask(Guid id)
         {
+            await _repository.DeleteTask(id);
+
+            return Ok();
         }
     }
 }
