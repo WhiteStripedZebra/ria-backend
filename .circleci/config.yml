@@ -1,0 +1,16 @@
+version: 2.0
+jobs:
+  build:
+    docker:
+      - image: mcr.microsoft.com/dotnet/core/sdk:2.1
+    steps:
+      - checkout
+      - run:
+          name: Restore nuget packages
+          command: dotnet restore
+      - run:
+          name: Build solution
+          command: dotnet build
+      - run:
+          name: Publish
+          command: dotnet publish
