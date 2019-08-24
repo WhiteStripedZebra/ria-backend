@@ -24,6 +24,13 @@ C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.dll
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.xml
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.pdb
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.csprojAssemblyReference.cache
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.csproj.CoreCompileInputs.cache
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.RazorAssemblyInfo.cache
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.RazorAssemblyInfo.cs
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\EngineerAPI\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.AssemblyInfoInputs.cache
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.AssemblyInfo.cs
 C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\EngineerAPI\bin\Debug\netcoreapp2.1\Engineer.Api.deps.json
 C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\EngineerAPI\bin\Debug\netcoreapp2.1\Engineer.Api.runtimeconfig.json
 C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\EngineerAPI\bin\Debug\netcoreapp2.1\Engineer.Api.runtimeconfig.dev.json
@@ -38,13 +45,6 @@ C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\EngineerAPI\bin\Debug\netcoreapp
 C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\EngineerAPI\bin\Debug\netcoreapp2.1\Engineer.Domain.pdb
 C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\EngineerAPI\bin\Debug\netcoreapp2.1\Engineer.Mapping.pdb
 C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\EngineerAPI\bin\Debug\netcoreapp2.1\Engineer.Persistence.pdb
-C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.csprojAssemblyReference.cache
-C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.csproj.CoreCompileInputs.cache
-C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.RazorAssemblyInfo.cache
-C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.RazorAssemblyInfo.cs
-C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\EngineerAPI\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
-C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.AssemblyInfoInputs.cache
-C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.AssemblyInfo.cs
 C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.RazorTargetAssemblyInfo.cache
 C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.csproj.CopyComplete
 C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.dll

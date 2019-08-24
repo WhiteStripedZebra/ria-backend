@@ -2,6 +2,7 @@
 using System.IO;
 using System.Reflection;
 using AutoMapper;
+using Engineer.Application.Repository.News;
 using Engineer.Application.Repository.Tasks;
 using Engineer.Domain.Repositories;
 using Engineer.Mapping.Helpers;
@@ -30,6 +31,7 @@ namespace Engineer.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<ITodoRepository, ToDoRepository>();
+            services.AddScoped<IArticleRepository, ArticleRepository>();
 
             services.AddAutoMapper(typeof(ProfileAnchor).GetTypeInfo().Assembly);
 

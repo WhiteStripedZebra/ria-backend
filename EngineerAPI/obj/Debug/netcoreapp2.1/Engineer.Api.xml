@@ -4,6 +4,14 @@
         <name>Engineer.Api</name>
     </assembly>
     <members>
+        <member name="M:Engineer.Api.Controllers.ArticleController.GetAllArticles">
+            <summary>
+            Gets a list of Tasks
+            </summary>
+            <returns>A list of Tasks</returns>
+            <response code="200">Returns list of all Tasks </response>
+            <response code="404">Items not found</response>
+        </member>
         <member name="M:Engineer.Api.Controllers.ValuesController.GetTasks">
             <summary>
             Gets a list of Tasks

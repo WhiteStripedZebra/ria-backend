@@ -8,13 +8,15 @@ namespace Engineer.Persistence
     public class ApplicationDbContext : DbContext
     {
         public DbSet<ToDo> Tasks { get; set; }
- 
+
+        public DbSet<Article> Articles { get; set; }
+
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
-        
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-    
-        
+
+
             modelBuilder.Entity<ToDo>().HasData(
                 new ToDo
                 {
@@ -52,8 +54,27 @@ namespace Engineer.Persistence
                     Task = "Delete Data"
                 });
 
-               base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Article>().HasData(
+                new Article
+                {
+                    Id = Guid.Parse("005123eb-7299-4845-8f7e-6b2b37f5bdbc"),
+                    CreatedAt = DateTimeOffset.FromUnixTimeSeconds(1566538868),
+                    Tags = "RIA",
+                    Title = "RIA WEB",
+                    Description = "WEBSIDE APPLICATION"
+                },
+                new Article
+                {
+                    Id = Guid.Parse("780f2cfb-1bcb-4765-9a7c-41d3fda1c14c"),
+                    CreatedAt = DateTimeOffset.FromUnixTimeSeconds(1566538858),
+                    Tags = "ARI",
+                    Title = "ARI WEB",
+                    Description = "SIDEWEB APPLICATION"
+                }
+            );
+
+            base.OnModelCreating(modelBuilder);
         }
-       
+
     }
 }
