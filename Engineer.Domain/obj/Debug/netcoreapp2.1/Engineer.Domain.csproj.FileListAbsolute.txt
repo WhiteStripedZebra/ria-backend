@@ -7,3 +7,11 @@ C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Dom
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Domain\obj\Debug\netcoreapp2.1\Engineer.Domain.dll
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Domain\obj\Debug\netcoreapp2.1\Engineer.Domain.pdb
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Domain\obj\Debug\netcoreapp2.1\Engineer.Domain.csprojAssemblyReference.cache
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\Engineer.Domain\bin\Debug\netcoreapp2.1\Engineer.Domain.deps.json
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\Engineer.Domain\bin\Debug\netcoreapp2.1\Engineer.Domain.dll
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\Engineer.Domain\bin\Debug\netcoreapp2.1\Engineer.Domain.pdb
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\Engineer.Domain\obj\Debug\netcoreapp2.1\Engineer.Domain.csproj.CoreCompileInputs.cache
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\Engineer.Domain\obj\Debug\netcoreapp2.1\Engineer.Domain.AssemblyInfoInputs.cache
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\Engineer.Domain\obj\Debug\netcoreapp2.1\Engineer.Domain.AssemblyInfo.cs
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\Engineer.Domain\obj\Debug\netcoreapp2.1\Engineer.Domain.dll
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\Engineer.Domain\obj\Debug\netcoreapp2.1\Engineer.Domain.pdb

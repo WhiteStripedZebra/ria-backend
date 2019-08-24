@@ -12072,23 +12072,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Steiner\\.nuget\\packages\\": {},
+    "C:\\Users\\victo\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilAPI\\EngineerAPI\\EngineerAPI\\Engineer.Api.csproj",
+      "projectUniqueName": "C:\\Users\\victo\\OneDrive\\Desktop\\RIA\\ria-backend\\EngineerAPI\\Engineer.Api.csproj",
       "projectName": "Engineer.Api",
-      "projectPath": "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilAPI\\EngineerAPI\\EngineerAPI\\Engineer.Api.csproj",
-      "packagesPath": "C:\\Users\\Steiner\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilAPI\\EngineerAPI\\EngineerAPI\\obj\\",
+      "projectPath": "C:\\Users\\victo\\OneDrive\\Desktop\\RIA\\ria-backend\\EngineerAPI\\Engineer.Api.csproj",
+      "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\victo\\OneDrive\\Desktop\\RIA\\ria-backend\\EngineerAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Steiner\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\victo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -12101,17 +12101,17 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilAPI\\EngineerAPI\\Engineer.Application\\Engineer.Application.csproj": {
-              "projectPath": "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilAPI\\EngineerAPI\\Engineer.Application\\Engineer.Application.csproj"
+            "C:\\Users\\victo\\OneDrive\\Desktop\\RIA\\ria-backend\\Engineer.Application\\Engineer.Application.csproj": {
+              "projectPath": "C:\\Users\\victo\\OneDrive\\Desktop\\RIA\\ria-backend\\Engineer.Application\\Engineer.Application.csproj"
             },
-            "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilAPI\\EngineerAPI\\Engineer.Domain\\Engineer.Domain.csproj": {
-              "projectPath": "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilAPI\\EngineerAPI\\Engineer.Domain\\Engineer.Domain.csproj"
+            "C:\\Users\\victo\\OneDrive\\Desktop\\RIA\\ria-backend\\Engineer.Domain\\Engineer.Domain.csproj": {
+              "projectPath": "C:\\Users\\victo\\OneDrive\\Desktop\\RIA\\ria-backend\\Engineer.Domain\\Engineer.Domain.csproj"
             },
-            "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilAPI\\EngineerAPI\\Engineer.Mappings\\Engineer.Mapping.csproj": {
-              "projectPath": "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilAPI\\EngineerAPI\\Engineer.Mappings\\Engineer.Mapping.csproj"
+            "C:\\Users\\victo\\OneDrive\\Desktop\\RIA\\ria-backend\\Engineer.Mappings\\Engineer.Mapping.csproj": {
+              "projectPath": "C:\\Users\\victo\\OneDrive\\Desktop\\RIA\\ria-backend\\Engineer.Mappings\\Engineer.Mapping.csproj"
             },
-            "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilAPI\\EngineerAPI\\Engineer.Persistence\\Engineer.Persistence.csproj": {
-              "projectPath": "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilAPI\\EngineerAPI\\Engineer.Persistence\\Engineer.Persistence.csproj"
+            "C:\\Users\\victo\\OneDrive\\Desktop\\RIA\\ria-backend\\Engineer.Persistence\\Engineer.Persistence.csproj": {
+              "projectPath": "C:\\Users\\victo\\OneDrive\\Desktop\\RIA\\ria-backend\\Engineer.Persistence\\Engineer.Persistence.csproj"
             }
           }
         }

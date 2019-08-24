@@ -10,3 +10,15 @@ C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Map
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Mappings\obj\Debug\netcoreapp2.1\Engineer.Mapping.csproj.CopyComplete
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Mappings\obj\Debug\netcoreapp2.1\Engineer.Mapping.dll
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Mappings\obj\Debug\netcoreapp2.1\Engineer.Mapping.pdb
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\Engineer.Mappings\bin\Debug\netcoreapp2.1\Engineer.Mapping.deps.json
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\Engineer.Mappings\bin\Debug\netcoreapp2.1\Engineer.Mapping.dll
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\Engineer.Mappings\bin\Debug\netcoreapp2.1\Engineer.Mapping.pdb
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\Engineer.Mappings\bin\Debug\netcoreapp2.1\Engineer.Domain.dll
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\Engineer.Mappings\bin\Debug\netcoreapp2.1\Engineer.Domain.pdb
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\Engineer.Mappings\obj\Debug\netcoreapp2.1\Engineer.Mapping.csprojAssemblyReference.cache
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\Engineer.Mappings\obj\Debug\netcoreapp2.1\Engineer.Mapping.csproj.CoreCompileInputs.cache
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\Engineer.Mappings\obj\Debug\netcoreapp2.1\Engineer.Mapping.AssemblyInfoInputs.cache
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\Engineer.Mappings\obj\Debug\netcoreapp2.1\Engineer.Mapping.AssemblyInfo.cs
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\Engineer.Mappings\obj\Debug\netcoreapp2.1\Engineer.Mapping.csproj.CopyComplete
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\Engineer.Mappings\obj\Debug\netcoreapp2.1\Engineer.Mapping.dll
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\Engineer.Mappings\obj\Debug\netcoreapp2.1\Engineer.Mapping.pdb

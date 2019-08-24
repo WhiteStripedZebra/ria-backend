@@ -10,3 +10,15 @@ C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Per
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Persistence\obj\Debug\netcoreapp2.1\Engineer.Persistence.csproj.CopyComplete
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Persistence\obj\Debug\netcoreapp2.1\Engineer.Persistence.dll
 C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\Engineer.Persistence\obj\Debug\netcoreapp2.1\Engineer.Persistence.pdb
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\Engineer.Persistence\bin\Debug\netcoreapp2.1\Engineer.Persistence.deps.json
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\Engineer.Persistence\bin\Debug\netcoreapp2.1\Engineer.Persistence.dll
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\Engineer.Persistence\bin\Debug\netcoreapp2.1\Engineer.Persistence.pdb
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\Engineer.Persistence\bin\Debug\netcoreapp2.1\Engineer.Domain.dll
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\Engineer.Persistence\bin\Debug\netcoreapp2.1\Engineer.Domain.pdb
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\Engineer.Persistence\obj\Debug\netcoreapp2.1\Engineer.Persistence.csprojAssemblyReference.cache
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\Engineer.Persistence\obj\Debug\netcoreapp2.1\Engineer.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\Engineer.Persistence\obj\Debug\netcoreapp2.1\Engineer.Persistence.AssemblyInfoInputs.cache
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\Engineer.Persistence\obj\Debug\netcoreapp2.1\Engineer.Persistence.AssemblyInfo.cs
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\Engineer.Persistence\obj\Debug\netcoreapp2.1\Engineer.Persistence.csproj.CopyComplete
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\Engineer.Persistence\obj\Debug\netcoreapp2.1\Engineer.Persistence.dll
+C:\Users\victo\OneDrive\Desktop\RIA\ria-backend\Engineer.Persistence\obj\Debug\netcoreapp2.1\Engineer.Persistence.pdb
