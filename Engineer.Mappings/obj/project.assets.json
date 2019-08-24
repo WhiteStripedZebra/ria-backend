@@ -1431,23 +1431,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\victo\\.nuget\\packages\\": {},
+    "C:\\Users\\Steiner\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\victo\\OneDrive\\Desktop\\RIA\\ria-backend\\Engineer.Mappings\\Engineer.Mapping.csproj",
+      "projectUniqueName": "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilBackend\\Engineer.Mappings\\Engineer.Mapping.csproj",
       "projectName": "Engineer.Mapping",
-      "projectPath": "C:\\Users\\victo\\OneDrive\\Desktop\\RIA\\ria-backend\\Engineer.Mappings\\Engineer.Mapping.csproj",
-      "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\victo\\OneDrive\\Desktop\\RIA\\ria-backend\\Engineer.Mappings\\obj\\",
+      "projectPath": "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilBackend\\Engineer.Mappings\\Engineer.Mapping.csproj",
+      "packagesPath": "C:\\Users\\Steiner\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilBackend\\Engineer.Mappings\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\victo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Steiner\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1460,8 +1460,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\victo\\OneDrive\\Desktop\\RIA\\ria-backend\\Engineer.Domain\\Engineer.Domain.csproj": {
-              "projectPath": "C:\\Users\\victo\\OneDrive\\Desktop\\RIA\\ria-backend\\Engineer.Domain\\Engineer.Domain.csproj"
+            "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilBackend\\Engineer.Domain\\Engineer.Domain.csproj": {
+              "projectPath": "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilBackend\\Engineer.Domain\\Engineer.Domain.csproj"
             }
           }
         }
