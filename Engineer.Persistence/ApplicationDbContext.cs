@@ -1,17 +1,20 @@
 ﻿using System;
 using Engineer.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration;
 
 namespace Engineer.Persistence
 {
     public class ApplicationDbContext : DbContext
     {
         public DbSet<ToDo> Tasks { get; set; }
-
+ 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
-         
+        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+    
+        
             modelBuilder.Entity<ToDo>().HasData(
                 new ToDo
                 {
