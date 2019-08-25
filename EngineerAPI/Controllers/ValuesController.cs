@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
+using Engineer.Api.Authorization;
 using Engineer.Domain.Entities;
 using Engineer.Domain.Models.Todo;
 using Engineer.Domain.Repositories;
+using IdentityServer4.Extensions;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Engineer.Api.Controllers
@@ -40,7 +43,7 @@ namespace Engineer.Api.Controllers
             {
                 return NotFound();
             }
-            
+
             return Ok(_mapper.Map<IEnumerable<ToDoDTO>>(taskEntities));
         }
 
