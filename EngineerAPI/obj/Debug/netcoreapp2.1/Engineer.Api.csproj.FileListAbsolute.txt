@@ -68,6 +68,7 @@ C:\Users\Steiner\Documents\Github\EngineeringCouncilBackend\EngineerAPI\obj\Debu
 C:\Users\Steiner\Documents\Github\EngineeringCouncilBackend\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.csproj.CoreCompileInputs.cache
 C:\Users\Steiner\Documents\Github\EngineeringCouncilBackend\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.RazorAssemblyInfo.cache
 C:\Users\Steiner\Documents\Github\EngineeringCouncilBackend\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.RazorAssemblyInfo.cs
+C:\Users\Steiner\Documents\Github\EngineeringCouncilBackend\EngineerAPI\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
 C:\Users\Steiner\Documents\Github\EngineeringCouncilBackend\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.AssemblyInfoInputs.cache
 C:\Users\Steiner\Documents\Github\EngineeringCouncilBackend\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.AssemblyInfo.cs
 C:\Users\Steiner\Documents\Github\EngineeringCouncilBackend\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.RazorTargetAssemblyInfo.cache
@@ -75,4 +76,3 @@ C:\Users\Steiner\Documents\Github\EngineeringCouncilBackend\EngineerAPI\obj\Debu
 C:\Users\Steiner\Documents\Github\EngineeringCouncilBackend\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.dll
 C:\Users\Steiner\Documents\Github\EngineeringCouncilBackend\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.xml
 C:\Users\Steiner\Documents\Github\EngineeringCouncilBackend\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.pdb
-C:\Users\Steiner\Documents\Github\EngineeringCouncilBackend\EngineerAPI\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs

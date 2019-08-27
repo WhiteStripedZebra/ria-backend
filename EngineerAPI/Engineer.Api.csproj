@@ -6,6 +6,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <LangVersion>7.1</LangVersion>
     <UserSecretsId>95cfc512-0aa8-41a7-9cc3-73955025a434</UserSecretsId>
     <StartupObject>Engineer.Api.Program</StartupObject>
   </PropertyGroup>

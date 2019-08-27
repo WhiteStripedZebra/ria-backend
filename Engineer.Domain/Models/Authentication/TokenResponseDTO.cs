@@ -7,6 +7,5 @@ namespace Engineer.Domain.Models.Authentication
     public class TokenResponseDTO
     {
         public string Token { get; set; }
-        public long Expiration { get; set; }
     }
 }

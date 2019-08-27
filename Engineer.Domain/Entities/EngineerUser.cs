@@ -6,8 +6,6 @@ namespace Engineer.Domain.Entities
 {
     public class EngineerUser : IdentityUser
     {
-        public string Id { get; set; }
-
         public DateTimeOffset CreatedAt { get; set; }
         
         public string FirstName { get; set; }
