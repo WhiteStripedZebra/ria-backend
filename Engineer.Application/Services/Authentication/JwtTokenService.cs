@@ -36,6 +36,7 @@ namespace Engineer.Application.Services.Authentication
         Task<string> RequestToken(LoginDTO login);
 
         Task<bool> CheckForValidRefreshToken(RefreshToken refreshToken);
+        Task ClearRefreshToken(string refreshToken);
     }
 
     public class JwtTokenService : IJwtTokenService
@@ -128,6 +129,20 @@ namespace Engineer.Application.Services.Authentication
             }
 
             return token.Expiration >= DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        }
+
+        public async Task ClearRefreshToken(string refreshToken)
+        {
+            var token = await _context.RefreshTokens.FirstOrDefaultAsync(t => t.Token == refreshToken);
+
+            if (token == null)
+            {
+                throw new Exception("Refresh token does not exist"); 
+            }
+
+            _context.RefreshTokens.Remove(token);
+
+            await _context.SaveChangesAsync();
         }
 
         private async Task<ClaimsIdentity> GenerateClaimsIdentityAsync(EngineerUser user)

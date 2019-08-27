@@ -86,5 +86,27 @@ namespace Engineer.Api.Controllers
 
             return Ok(accessToken);
         }
+
+        [HttpPost]
+        [Route("invalidate")]
+        public async Task<ActionResult> InvalidateToken()
+        {
+            HttpContext.Response.Cookies.Append("MyKey", "InvalidToken", new CookieOptions
+            {
+                HttpOnly = true,
+                Expires = DateTimeOffset.UtcNow.AddDays(-1),
+                IsEssential = true,
+                SameSite = SameSiteMode.None,
+                Secure = true
+            });
+
+            HttpContext.Request.Cookies.TryGetValue("MyKey", out var refreshToken);
+            if (!string.IsNullOrWhiteSpace(refreshToken))
+            {
+                await _tokenService.ClearRefreshToken(refreshToken);
+            }
+
+            return NoContent();
+        }
     }
 }
