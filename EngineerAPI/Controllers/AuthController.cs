@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Engineer.Application.Services.Authentication;
+using Engineer.Domain.Entities;
 using Engineer.Domain.Models.Authentication;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Engineer.Api.Controllers
@@ -13,14 +12,11 @@ namespace Engineer.Api.Controllers
     [ApiController]
     public class AuthController : Controller
     {
-        private readonly IJwtAuthenticationService _authenticationService;
+        private readonly IJwtTokenService _tokenService;
 
-        private readonly IJwtTokenService _jwtTokenService;
-
-        public AuthController(IJwtAuthenticationService authenticationService, IJwtTokenService jwtTokenService)
+        public AuthController(IJwtTokenService tokenService)
         {
-            _authenticationService = authenticationService;
-            _jwtTokenService = jwtTokenService;
+            _tokenService = tokenService;
         }
 
         [HttpGet]
@@ -32,16 +28,12 @@ namespace Engineer.Api.Controllers
                 return BadRequest("No credentials were found");
             }
 
-            var result = await _authenticationService.SignInAsync(login.Username, login.Password);
-
-            if (!result.Succeeded)
+            var accessToken = new TokenResponseDTO
             {
-                return Unauthorized();
-            }
+                Token = await _tokenService.GenerateAccessToken(login.Username)
+            };
 
-            var accessTokenResponse = await _jwtTokenService.GenerateAccessToken(login.Username);
-
-            return accessTokenResponse;
+            return accessToken;
         }
     }
 }

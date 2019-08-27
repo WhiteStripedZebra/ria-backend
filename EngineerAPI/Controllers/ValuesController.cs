@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using AutoMapper;
-using Engineer.Api.Authorization;
+using Engineer.Domain.Authorization;
 using Engineer.Domain.Entities;
 using Engineer.Domain.Models.Todo;
 using Engineer.Domain.Repositories;
-using IdentityServer4.Extensions;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Engineer.Api.Controllers
@@ -33,6 +33,7 @@ namespace Engineer.Api.Controllers
         /// <response code="200">Returns list of all Tasks </response>
         /// <response code="404">Items not found</response>
         [HttpGet]
+        [Authorize(Policy = nameof(Policies.BoardMember))]
         [ProducesResponseType(200)]
         [ProducesResponseType(404)]
         public async Task<ActionResult<ToDo[]>> GetTasks()
@@ -47,6 +48,12 @@ namespace Engineer.Api.Controllers
             return Ok(_mapper.Map<IEnumerable<ToDoDTO>>(taskEntities));
         }
 
+
+        [HttpGet("claims")]
+        public async Task<IEnumerable<Claim>> GetClaims()
+        {
+            return HttpContext.User.Claims;
+        }
 
         [HttpGet("{id}")]
         [ProducesResponseType(200)]

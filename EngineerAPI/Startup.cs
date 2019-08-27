@@ -1,21 +1,14 @@
 ﻿using System;
 using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Text;
 using AutoMapper;
-using Engineer.Api.Authorization;
-using Engineer.Api.Authorization.Policies;
-using Engineer.Application.IdentityHelpers;
+using Engineer.Api.Configurations;
 using Engineer.Application.Repository.Tasks;
 using Engineer.Application.Services.Authentication;
 using Engineer.Domain.Entities;
-using Engineer.Domain.Enums;
 using Engineer.Domain.Repositories;
 using Engineer.Mapping.Helpers;
-using Engineer.Mapping.Profiles;
 using Engineer.Persistence;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -23,18 +16,25 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.IdentityModel.Logging;
-using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 
 namespace Engineer.Api
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IHostingEnvironment environment)
         {
-            Configuration = configuration;
+            var shouldReloadConfigurations = !environment.EnvironmentName.Equals("Test");
+
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(environment.ContentRootPath)
+                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: shouldReloadConfigurations)
+                .AddJsonFile($"appsettings.{environment.EnvironmentName}.json", optional: true,
+                    reloadOnChange: shouldReloadConfigurations)
+                .AddEnvironmentVariables();
+
+            Configuration = builder.Build();
         }
 
         public IConfiguration Configuration { get; }
@@ -45,10 +45,15 @@ namespace Engineer.Api
             IdentityModelEventSource.ShowPII = true;
 
             services.AddScoped<ITodoRepository, ToDoRepository>();
-            services.AddScoped<IJwtAuthenticationService, JwtAuthenticationService>();
             services.AddScoped<IJwtTokenService, JwtTokenService>();
 
+
+            services.AddJwtAuthentication(Configuration);
+            services.AddAuthorizationPolicies();
+
+
             services.AddAutoMapper(typeof(ProfileAnchor).GetTypeInfo().Assembly);
+
 
             services.AddSwaggerGen(config =>
             {
@@ -60,76 +65,11 @@ namespace Engineer.Api
                 config.IncludeXmlComments(xmlPath);
             });
 
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
            
+
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("EngineeringCouncil")));
-
-            services.AddIdentity<EngineerUser, IdentityRole>(options =>
-            {
-                options.Password.RequireDigit = true;
-                options.Password.RequiredLength = 8;
-                options.Password.RequiredUniqueChars = 0;
-                options.Password.RequireNonAlphanumeric = false;
-                options.Password.RequireUppercase = true;
-            })
-            .AddEntityFrameworkStores<ApplicationDbContext>()
-            .AddUserManager<UserManager<EngineerUser>>()
-            .AddDefaultTokenProviders();
-
-            var jwtAppSettings = Configuration.GetSection("JwtIssuerOptions");
-
-
-            services.Configure<JwtAuthentication>(options =>
-            {
-                options.Issuer = jwtAppSettings["Issuer"];
-                options.Audience = jwtAppSettings["Audience"];
-                options.SecurityKey = jwtAppSettings["SecurityKey"];
-            });
-
-
-            services.AddAuthentication(options =>
-                {
-                    options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
-                    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-                })
-                .AddJwtBearer(options =>
-                {
-                    options.ClaimsIssuer = jwtAppSettings["Issuer"];
-                    options.SaveToken = true;
-                    options.TokenValidationParameters = new TokenValidationParameters
-                    {
-                        ValidateIssuer = false,
-                        ValidIssuer = jwtAppSettings["Issuer"],
-                        ValidateAudience = false,
-                        ValidAudience = jwtAppSettings["Audience"],
-                        ValidateIssuerSigningKey = true,
-                        IssuerSigningKey = new SymmetricSecurityKey(Convert.FromBase64String(jwtAppSettings["SecurityKey"])),
-                        RequireExpirationTime = true,
-                        ValidateLifetime = true,
-                        ClockSkew = TimeSpan.Zero
-                    };
-                });
-
-            services.AddAuthorization(options =>
-            {
-                options.AddPolicy(CouncilPolicies.IsBoardMember, policy => {
-                    policy.RequireAssertion(context =>
-                    {
-                        var role = context.User.FindFirst(claim => claim.Type == CustomClaimTypes.Role).Value;
-
-                        return role == CouncilRole.BoardMember.ToString();
-                    });
-                });
-
-                options.AddPolicy(CouncilPolicies.IsBoardMemberOrVolunteer, policy => 
-                    policy.RequireAssertion(context =>
-                        {
-                            var role = context.User.FindFirst(claim => claim.Type == CustomClaimTypes.Role).Value;
-
-                            return role == CouncilRole.BoardMember.ToString() || role == CouncilRole.Volunteer.ToString();
-                        }));
-            });
 
         }
 
@@ -145,9 +85,6 @@ namespace Engineer.Api
             {
                 app.UseHsts();
             }
-
-
-            ApplicationDbInitializer.SeedUsers(userManager);
 
             app.UseSwagger();
 
