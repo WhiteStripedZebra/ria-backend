@@ -9,6 +9,7 @@ namespace Engineer.Persistence
     public class ApplicationDbContext : IdentityDbContext<EngineerUser>
     {
         public DbSet<ToDo> Tasks { get; set; }
+        public DbSet<RefreshToken> RefreshTokens { get; set; }
         
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
         
