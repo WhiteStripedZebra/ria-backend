@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Engineer.Domain.Entities;
 using Engineer.Domain.Repositories;
 using Engineer.Persistence;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 
 namespace Engineer.Application.Repository.Tasks
@@ -36,6 +37,7 @@ namespace Engineer.Application.Repository.Tasks
             }
 
             entity.CreatedAt = DateTimeOffset.Now;
+
 
             _context.Add(entity);
         }

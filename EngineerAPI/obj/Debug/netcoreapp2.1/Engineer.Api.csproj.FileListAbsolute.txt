@@ -58,10 +58,12 @@ C:\Users\Steiner\Documents\Github\EngineeringCouncilBackend\EngineerAPI\bin\Debu
 C:\Users\Steiner\Documents\Github\EngineeringCouncilBackend\EngineerAPI\bin\Debug\netcoreapp2.1\Engineer.Api.xml
 C:\Users\Steiner\Documents\Github\EngineeringCouncilBackend\EngineerAPI\bin\Debug\netcoreapp2.1\Engineer.Application.dll
 C:\Users\Steiner\Documents\Github\EngineeringCouncilBackend\EngineerAPI\bin\Debug\netcoreapp2.1\Engineer.Domain.dll
+C:\Users\Steiner\Documents\Github\EngineeringCouncilBackend\EngineerAPI\bin\Debug\netcoreapp2.1\Engineer.Hubs.dll
 C:\Users\Steiner\Documents\Github\EngineeringCouncilBackend\EngineerAPI\bin\Debug\netcoreapp2.1\Engineer.Mapping.dll
 C:\Users\Steiner\Documents\Github\EngineeringCouncilBackend\EngineerAPI\bin\Debug\netcoreapp2.1\Engineer.Persistence.dll
 C:\Users\Steiner\Documents\Github\EngineeringCouncilBackend\EngineerAPI\bin\Debug\netcoreapp2.1\Engineer.Application.pdb
 C:\Users\Steiner\Documents\Github\EngineeringCouncilBackend\EngineerAPI\bin\Debug\netcoreapp2.1\Engineer.Domain.pdb
+C:\Users\Steiner\Documents\Github\EngineeringCouncilBackend\EngineerAPI\bin\Debug\netcoreapp2.1\Engineer.Hubs.pdb
 C:\Users\Steiner\Documents\Github\EngineeringCouncilBackend\EngineerAPI\bin\Debug\netcoreapp2.1\Engineer.Mapping.pdb
 C:\Users\Steiner\Documents\Github\EngineeringCouncilBackend\EngineerAPI\bin\Debug\netcoreapp2.1\Engineer.Persistence.pdb
 C:\Users\Steiner\Documents\Github\EngineeringCouncilBackend\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.csprojAssemblyReference.cache

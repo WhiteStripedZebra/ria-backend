@@ -1,14 +1,16 @@
 ﻿using System;
 using Engineer.Domain.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration;
 
 namespace Engineer.Persistence
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext<EngineerUser>
     {
         public DbSet<ToDo> Tasks { get; set; }
- 
+        public DbSet<RefreshToken> RefreshTokens { get; set; }
+        
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
         
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -51,6 +53,8 @@ namespace Engineer.Persistence
                     IsCompleted = false,
                     Task = "Delete Data"
                 });
+
+                
 
                base.OnModelCreating(modelBuilder);
         }
