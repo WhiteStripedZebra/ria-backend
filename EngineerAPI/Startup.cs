@@ -7,6 +7,7 @@ using Engineer.Application.Repository.Tasks;
 using Engineer.Application.Services.Authentication;
 using Engineer.Domain.Entities;
 using Engineer.Domain.Repositories;
+using Engineer.Hubs;
 using Engineer.Mapping.Helpers;
 using Engineer.Persistence;
 using Microsoft.AspNetCore.Builder;
@@ -39,6 +40,8 @@ namespace Engineer.Api
 
         public IConfiguration Configuration { get; }
 
+        private readonly string AllowedSpecificOrigins = "_AllowedSpecificOrigins";
+
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
@@ -50,6 +53,30 @@ namespace Engineer.Api
 
             services.AddJwtAuthentication(Configuration);
             services.AddAuthorizationPolicies();
+
+            services.AddCors(options =>
+            {
+
+                options.AddDefaultPolicy(builder =>
+                    {
+                        builder
+                            .WithOrigins("http://localhost:4200")
+                            .AllowAnyHeader()
+                            .WithMethods("GET", "POST")
+                            .AllowCredentials();
+                    });
+
+                options.AddPolicy(AllowedSpecificOrigins,
+                    builder =>
+                    {
+                        builder
+                            .AllowAnyOrigin()
+                            .AllowAnyHeader()
+                            .AllowAnyMethod()
+                            .AllowCredentials();
+                    });
+
+            });
 
 
             services.AddAutoMapper(typeof(ProfileAnchor).GetTypeInfo().Assembly);
@@ -71,6 +98,8 @@ namespace Engineer.Api
 
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("EngineeringCouncil")));
 
+            services.AddSignalR(config => config.KeepAliveInterval = TimeSpan.FromSeconds(120));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -87,15 +116,15 @@ namespace Engineer.Api
             }
 
             app.UseSwagger();
-
             app.UseSwaggerUI(config =>
             {
                 config.SwaggerEndpoint("/swagger/v1/swagger.json", "API v1");
             });
 
             app.UseHttpsRedirection();
-
             app.UseAuthentication();
+            app.UseSignalR(routes => routes.MapHub<ChatHub>("/chat"));
+            app.UseCors(AllowedSpecificOrigins);
 
             app.UseMvc();
         }

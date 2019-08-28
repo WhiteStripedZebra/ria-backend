@@ -49,12 +49,6 @@ namespace Engineer.Api.Controllers
         }
 
 
-        [HttpGet("claims")]
-        public async Task<IEnumerable<Claim>> GetClaims()
-        {
-            return HttpContext.User.Claims;
-        }
-
         [HttpGet("{id}")]
         [ProducesResponseType(200)]
         [ProducesResponseType(404)]
