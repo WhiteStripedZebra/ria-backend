@@ -8,4 +8,14 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAB3/WWVXnN0yl8EJ8hqz1iAAAAAACAAAAAAAQZgAAAAEAACAAAAANbC+dX2jP2yx9G1ElnNNlKot9rE9PLC+EFYcPc1rhcQAAAAAOgAAAAAIAACAAAABoZE1cBWxS8E3W616mRuOfcgMmNi8fmy802FFH0OlxGCAAAAA7UopQWMOenLcMvXDB7CoA+KnKnfJYAsk0hwbWjqDWS0AAAAB4FlZwcNFywH3D9MGckB25YMEbDIrqUeWu/8ge6PoAphpXod4H5o5icl9ZTG5D7DcX5cvAYPUzY7SMwSs8Haus</EncryptedPassword>
   </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="EngineeringCouncil">
+      <Value>Data Source=mssql14.unoeuro.com%3bInitial Catalog=steinersolutions_dk_db_test%3bUser ID=steinersolutions_dk%3bPassword=hzp73skm%3bConnect Timeout=30%3bEncrypt=False%3bTrustServerCertificate=False%3bApplicationIntent=ReadWrite%3bMultiSubnetFailover=False</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="Engineer.Persistence.ApplicationDbContext">
+      <Value>Data Source=mssql14.unoeuro.com%3bInitial Catalog=steinersolutions_dk_db_test%3bUser ID=steinersolutions_dk%3bPassword=hzp73skm%3bConnect Timeout=30%3bEncrypt=False%3bTrustServerCertificate=False%3bApplicationIntent=ReadWrite%3bMultiSubnetFailover=False</Value>
+    </EFMigrations>
+  </ItemGroup>
 </Project>

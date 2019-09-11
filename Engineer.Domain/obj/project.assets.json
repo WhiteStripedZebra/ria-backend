@@ -4089,11 +4089,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilBackend\\Engineer.Domain\\Engineer.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Steiner\\Documents\\Github\\RiaarhusAPI\\Engineer.Domain\\Engineer.Domain.csproj",
       "projectName": "Engineer.Domain",
-      "projectPath": "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilBackend\\Engineer.Domain\\Engineer.Domain.csproj",
+      "projectPath": "C:\\Users\\Steiner\\Documents\\Github\\RiaarhusAPI\\Engineer.Domain\\Engineer.Domain.csproj",
       "packagesPath": "C:\\Users\\Steiner\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilBackend\\Engineer.Domain\\obj\\",
+      "outputPath": "C:\\Users\\Steiner\\Documents\\Github\\RiaarhusAPI\\Engineer.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

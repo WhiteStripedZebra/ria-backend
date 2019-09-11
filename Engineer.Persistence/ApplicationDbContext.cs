@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Engineer.Domain.Entities;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -10,13 +11,30 @@ namespace Engineer.Persistence
     {
         public DbSet<ToDo> Tasks { get; set; }
         public DbSet<RefreshToken> RefreshTokens { get; set; }
-        
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Order> Orders { get; set; }
+
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
         
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-    
-        
+            var products = new List<Product>();
+
+            for (var i = 0; i < 10; i++)
+            {
+                products.Add(new Product
+                {
+                    Id = Guid.Parse($"18{i}d4b4d-439b-4356-bc21-d01e3dd651ca"),
+                    CreatedAt = DateTimeOffset.FromUnixTimeSeconds(1566538828 + (1000 * i)),
+                    Name = $"Item {i}",
+                    Description = $"Funny little item {i}",
+                    Image = "",
+                    Price = 100 + (10*i)
+                });
+            }
+
+            modelBuilder.Entity<Product>().HasData(products.ToArray());
+
             modelBuilder.Entity<ToDo>().HasData(
                 new ToDo
                 {

@@ -8,4 +8,9 @@
     <PackageReference Include="Microsoft.AspNetCore.SignalR.Core" Version="1.0.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Engineer.Application\Engineer.Application.csproj" />
+    <ProjectReference Include="..\Engineer.Persistence\Engineer.Persistence.csproj" />
+  </ItemGroup>
+
 </Project>

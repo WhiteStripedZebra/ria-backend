@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <sitemanifest>
-  <IisApp path="C:\Users\Steiner\Documents\Github\EngineeringCouncilAPI\EngineerAPI\EngineerAPI\obj\Release\netcoreapp2.1\win-x86\PubTmp\Out\" />
+  <IisApp path="C:\Users\Steiner\Documents\Github\EngineeringCouncilBackend\EngineerAPI\obj\Release\netcoreapp2.1\win-x86\PubTmp\Out\" />
+  <dbfullsql path="C:\Users\Steiner\Documents\Github\EngineeringCouncilBackend\EngineerAPI\obj\Release\netcoreapp2.1\win-x86\PubTmp\EFSQLScripts\Engineer.Persistence.ApplicationDbContext.sql" />
 </sitemanifest>

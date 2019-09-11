@@ -3,8 +3,10 @@ using System.IO;
 using System.Reflection;
 using AutoMapper;
 using Engineer.Api.Configurations;
+using Engineer.Application.Repository;
 using Engineer.Application.Repository.Tasks;
 using Engineer.Application.Services.Authentication;
+using Engineer.Application.Services.Mail;
 using Engineer.Domain.Entities;
 using Engineer.Domain.Repositories;
 using Engineer.Hubs;
@@ -19,6 +21,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Logging;
 using Microsoft.OpenApi.Models;
+using Newtonsoft.Json;
+using Serilog;
 
 namespace Engineer.Api
 {
@@ -49,7 +53,9 @@ namespace Engineer.Api
 
             services.AddScoped<ITodoRepository, ToDoRepository>();
             services.AddScoped<IJwtTokenService, JwtTokenService>();
-
+            services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<IOrderRepository, OrderRepository>();
+            services.AddScoped<IMailService, MailService>();
 
             services.AddJwtAuthentication(Configuration);
             services.AddAuthorizationPolicies();
@@ -60,9 +66,9 @@ namespace Engineer.Api
                 options.AddDefaultPolicy(builder =>
                     {
                         builder
-                            .WithOrigins("http://localhost:4200")
+                            .WithOrigins("https://localhost:4200", "http://localhost:4200")
                             .AllowAnyHeader()
-                            .WithMethods("GET", "POST")
+                            .AllowAnyMethod()
                             .AllowCredentials();
                     });
 
@@ -70,7 +76,7 @@ namespace Engineer.Api
                     builder =>
                     {
                         builder
-                            .AllowAnyOrigin()
+                            .WithOrigins("https://localhost:4200", "http://localhost:4200")
                             .AllowAnyHeader()
                             .AllowAnyMethod()
                             .AllowCredentials();
@@ -93,12 +99,22 @@ namespace Engineer.Api
             });
 
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc()
+                .SetCompatibilityVersion(CompatibilityVersion.Version_2_1)
+                .AddJsonOptions(options =>
+                    {
+                        options.SerializerSettings.ReferenceLoopHandling =
+                            ReferenceLoopHandling.Ignore;
+                    });
            
 
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("EngineeringCouncil")));
 
-            services.AddSignalR(config => config.KeepAliveInterval = TimeSpan.FromSeconds(120));
+            services.AddSignalR(config =>
+            {
+                config.KeepAliveInterval = TimeSpan.FromSeconds(120);
+                config.EnableDetailedErrors = true;
+            });
 
         }
 
@@ -115,6 +131,8 @@ namespace Engineer.Api
                 app.UseHsts();
             }
 
+            app.UseCors(AllowedSpecificOrigins);
+
             app.UseSwagger();
             app.UseSwaggerUI(config =>
             {
@@ -124,7 +142,7 @@ namespace Engineer.Api
             app.UseHttpsRedirection();
             app.UseAuthentication();
             app.UseSignalR(routes => routes.MapHub<ChatHub>("/chat"));
-            app.UseCors(AllowedSpecificOrigins);
+            
 
             app.UseMvc();
         }

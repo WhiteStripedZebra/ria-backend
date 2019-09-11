@@ -6860,11 +6860,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilBackend\\Engineer.Application\\Engineer.Application.csproj",
+      "projectUniqueName": "C:\\Users\\Steiner\\Documents\\Github\\RiaarhusAPI\\Engineer.Application\\Engineer.Application.csproj",
       "projectName": "Engineer.Application",
-      "projectPath": "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilBackend\\Engineer.Application\\Engineer.Application.csproj",
+      "projectPath": "C:\\Users\\Steiner\\Documents\\Github\\RiaarhusAPI\\Engineer.Application\\Engineer.Application.csproj",
       "packagesPath": "C:\\Users\\Steiner\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilBackend\\Engineer.Application\\obj\\",
+      "outputPath": "C:\\Users\\Steiner\\Documents\\Github\\RiaarhusAPI\\Engineer.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6883,14 +6883,14 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilBackend\\Engineer.Domain\\Engineer.Domain.csproj": {
-              "projectPath": "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilBackend\\Engineer.Domain\\Engineer.Domain.csproj"
+            "C:\\Users\\Steiner\\Documents\\Github\\RiaarhusAPI\\Engineer.Domain\\Engineer.Domain.csproj": {
+              "projectPath": "C:\\Users\\Steiner\\Documents\\Github\\RiaarhusAPI\\Engineer.Domain\\Engineer.Domain.csproj"
             },
-            "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilBackend\\Engineer.Mappings\\Engineer.Mapping.csproj": {
-              "projectPath": "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilBackend\\Engineer.Mappings\\Engineer.Mapping.csproj"
+            "C:\\Users\\Steiner\\Documents\\Github\\RiaarhusAPI\\Engineer.Mappings\\Engineer.Mapping.csproj": {
+              "projectPath": "C:\\Users\\Steiner\\Documents\\Github\\RiaarhusAPI\\Engineer.Mappings\\Engineer.Mapping.csproj"
             },
-            "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilBackend\\Engineer.Persistence\\Engineer.Persistence.csproj": {
-              "projectPath": "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilBackend\\Engineer.Persistence\\Engineer.Persistence.csproj"
+            "C:\\Users\\Steiner\\Documents\\Github\\RiaarhusAPI\\Engineer.Persistence\\Engineer.Persistence.csproj": {
+              "projectPath": "C:\\Users\\Steiner\\Documents\\Github\\RiaarhusAPI\\Engineer.Persistence\\Engineer.Persistence.csproj"
             }
           }
         }

@@ -34,3 +34,15 @@ C:\Users\Steiner\Documents\Github\EngineeringCouncilBackend\Engineer.Persistence
 C:\Users\Steiner\Documents\Github\EngineeringCouncilBackend\Engineer.Persistence\obj\Debug\netcoreapp2.1\Engineer.Persistence.csproj.CopyComplete
 C:\Users\Steiner\Documents\Github\EngineeringCouncilBackend\Engineer.Persistence\obj\Debug\netcoreapp2.1\Engineer.Persistence.dll
 C:\Users\Steiner\Documents\Github\EngineeringCouncilBackend\Engineer.Persistence\obj\Debug\netcoreapp2.1\Engineer.Persistence.pdb
+C:\Users\Steiner\Documents\Github\RiaarhusAPI\Engineer.Persistence\bin\Debug\netcoreapp2.1\Engineer.Persistence.deps.json
+C:\Users\Steiner\Documents\Github\RiaarhusAPI\Engineer.Persistence\bin\Debug\netcoreapp2.1\Engineer.Persistence.dll
+C:\Users\Steiner\Documents\Github\RiaarhusAPI\Engineer.Persistence\bin\Debug\netcoreapp2.1\Engineer.Persistence.pdb
+C:\Users\Steiner\Documents\Github\RiaarhusAPI\Engineer.Persistence\bin\Debug\netcoreapp2.1\Engineer.Domain.dll
+C:\Users\Steiner\Documents\Github\RiaarhusAPI\Engineer.Persistence\bin\Debug\netcoreapp2.1\Engineer.Domain.pdb
+C:\Users\Steiner\Documents\Github\RiaarhusAPI\Engineer.Persistence\obj\Debug\netcoreapp2.1\Engineer.Persistence.csprojAssemblyReference.cache
+C:\Users\Steiner\Documents\Github\RiaarhusAPI\Engineer.Persistence\obj\Debug\netcoreapp2.1\Engineer.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Steiner\Documents\Github\RiaarhusAPI\Engineer.Persistence\obj\Debug\netcoreapp2.1\Engineer.Persistence.AssemblyInfoInputs.cache
+C:\Users\Steiner\Documents\Github\RiaarhusAPI\Engineer.Persistence\obj\Debug\netcoreapp2.1\Engineer.Persistence.AssemblyInfo.cs
+C:\Users\Steiner\Documents\Github\RiaarhusAPI\Engineer.Persistence\obj\Debug\netcoreapp2.1\Engineer.Persistence.csproj.CopyComplete
+C:\Users\Steiner\Documents\Github\RiaarhusAPI\Engineer.Persistence\obj\Debug\netcoreapp2.1\Engineer.Persistence.dll
+C:\Users\Steiner\Documents\Github\RiaarhusAPI\Engineer.Persistence\obj\Debug\netcoreapp2.1\Engineer.Persistence.pdb

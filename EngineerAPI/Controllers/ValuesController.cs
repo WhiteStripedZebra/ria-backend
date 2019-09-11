@@ -33,7 +33,7 @@ namespace Engineer.Api.Controllers
         /// <response code="200">Returns list of all Tasks </response>
         /// <response code="404">Items not found</response>
         [HttpGet]
-        [Authorize(Policy = nameof(Policies.BoardMember))]
+        //[Authorize(Policy = nameof(Policies.BoardMember))]
         [ProducesResponseType(200)]
         [ProducesResponseType(404)]
         public async Task<ActionResult<ToDo[]>> GetTasks()
@@ -54,12 +54,23 @@ namespace Engineer.Api.Controllers
         [ProducesResponseType(404)]
         public async Task<IActionResult> GetToDo(Guid id)
         {
-            var taskEntity = await _repository.GetTaskAsync(id);
+            ToDo taskEntity = null;
 
-            if (taskEntity == null)
+            try
             {
-                return NotFound();
+                taskEntity = await _repository.GetTaskAsync(id);
+
+                if (taskEntity == null)
+                {
+                    return NotFound();
+                }
             }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+
+
 
             return Ok(_mapper.Map<ToDoDTO>(taskEntity));
         }

@@ -4231,11 +4231,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilBackend\\Engineer.Mappings\\Engineer.Mapping.csproj",
+      "projectUniqueName": "C:\\Users\\Steiner\\Documents\\Github\\RiaarhusAPI\\Engineer.Mappings\\Engineer.Mapping.csproj",
       "projectName": "Engineer.Mapping",
-      "projectPath": "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilBackend\\Engineer.Mappings\\Engineer.Mapping.csproj",
+      "projectPath": "C:\\Users\\Steiner\\Documents\\Github\\RiaarhusAPI\\Engineer.Mappings\\Engineer.Mapping.csproj",
       "packagesPath": "C:\\Users\\Steiner\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilBackend\\Engineer.Mappings\\obj\\",
+      "outputPath": "C:\\Users\\Steiner\\Documents\\Github\\RiaarhusAPI\\Engineer.Mappings\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4254,8 +4254,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilBackend\\Engineer.Domain\\Engineer.Domain.csproj": {
-              "projectPath": "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilBackend\\Engineer.Domain\\Engineer.Domain.csproj"
+            "C:\\Users\\Steiner\\Documents\\Github\\RiaarhusAPI\\Engineer.Domain\\Engineer.Domain.csproj": {
+              "projectPath": "C:\\Users\\Steiner\\Documents\\Github\\RiaarhusAPI\\Engineer.Domain\\Engineer.Domain.csproj"
             }
           }
         }

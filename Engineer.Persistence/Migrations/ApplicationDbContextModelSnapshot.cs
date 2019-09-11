@@ -80,6 +80,85 @@ namespace Engineer.Persistence.Migrations
                     b.ToTable("AspNetUsers");
                 });
 
+            modelBuilder.Entity("Engineer.Domain.Entities.Order", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<DateTimeOffset>("CreatedAt");
+
+                    b.Property<string>("Email");
+
+                    b.Property<DateTimeOffset>("EndDate");
+
+                    b.Property<string>("Name");
+
+                    b.Property<string>("OrderNumber");
+
+                    b.Property<DateTimeOffset>("StartDate");
+
+                    b.Property<string>("UniversityId");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("Engineer.Domain.Entities.OrderItem", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<Guid?>("OrderId");
+
+                    b.Property<Guid?>("ProductId");
+
+                    b.Property<int>("Quantity");
+
+                    b.Property<int>("UnitPrice");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrderId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("OrderItem");
+                });
+
+            modelBuilder.Entity("Engineer.Domain.Entities.Product", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<DateTimeOffset>("CreatedAt");
+
+                    b.Property<string>("Description");
+
+                    b.Property<string>("Image");
+
+                    b.Property<string>("Name");
+
+                    b.Property<decimal>("Price");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Products");
+
+                    b.HasData(
+                        new { Id = new Guid("180d4b4d-439b-4356-bc21-d01e3dd651ca"), CreatedAt = new DateTimeOffset(new DateTime(2019, 8, 23, 5, 40, 28, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)), Description = "Funny little item 0", Image = "", Name = "Item 0", Price = 100m },
+                        new { Id = new Guid("181d4b4d-439b-4356-bc21-d01e3dd651ca"), CreatedAt = new DateTimeOffset(new DateTime(2019, 8, 23, 5, 57, 8, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)), Description = "Funny little item 1", Image = "", Name = "Item 1", Price = 110m },
+                        new { Id = new Guid("182d4b4d-439b-4356-bc21-d01e3dd651ca"), CreatedAt = new DateTimeOffset(new DateTime(2019, 8, 23, 6, 13, 48, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)), Description = "Funny little item 2", Image = "", Name = "Item 2", Price = 120m },
+                        new { Id = new Guid("183d4b4d-439b-4356-bc21-d01e3dd651ca"), CreatedAt = new DateTimeOffset(new DateTime(2019, 8, 23, 6, 30, 28, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)), Description = "Funny little item 3", Image = "", Name = "Item 3", Price = 130m },
+                        new { Id = new Guid("184d4b4d-439b-4356-bc21-d01e3dd651ca"), CreatedAt = new DateTimeOffset(new DateTime(2019, 8, 23, 6, 47, 8, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)), Description = "Funny little item 4", Image = "", Name = "Item 4", Price = 140m },
+                        new { Id = new Guid("185d4b4d-439b-4356-bc21-d01e3dd651ca"), CreatedAt = new DateTimeOffset(new DateTime(2019, 8, 23, 7, 3, 48, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)), Description = "Funny little item 5", Image = "", Name = "Item 5", Price = 150m },
+                        new { Id = new Guid("186d4b4d-439b-4356-bc21-d01e3dd651ca"), CreatedAt = new DateTimeOffset(new DateTime(2019, 8, 23, 7, 20, 28, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)), Description = "Funny little item 6", Image = "", Name = "Item 6", Price = 160m },
+                        new { Id = new Guid("187d4b4d-439b-4356-bc21-d01e3dd651ca"), CreatedAt = new DateTimeOffset(new DateTime(2019, 8, 23, 7, 37, 8, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)), Description = "Funny little item 7", Image = "", Name = "Item 7", Price = 170m },
+                        new { Id = new Guid("188d4b4d-439b-4356-bc21-d01e3dd651ca"), CreatedAt = new DateTimeOffset(new DateTime(2019, 8, 23, 7, 53, 48, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)), Description = "Funny little item 8", Image = "", Name = "Item 8", Price = 180m },
+                        new { Id = new Guid("189d4b4d-439b-4356-bc21-d01e3dd651ca"), CreatedAt = new DateTimeOffset(new DateTime(2019, 8, 23, 8, 10, 28, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)), Description = "Funny little item 9", Image = "", Name = "Item 9", Price = 190m }
+                    );
+                });
+
             modelBuilder.Entity("Engineer.Domain.Entities.RefreshToken", b =>
                 {
                     b.Property<string>("Token")
@@ -228,6 +307,17 @@ namespace Engineer.Persistence.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens");
+                });
+
+            modelBuilder.Entity("Engineer.Domain.Entities.OrderItem", b =>
+                {
+                    b.HasOne("Engineer.Domain.Entities.Order", "Order")
+                        .WithMany("Products")
+                        .HasForeignKey("OrderId");
+
+                    b.HasOne("Engineer.Domain.Entities.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

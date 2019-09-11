@@ -4397,11 +4397,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilBackend\\Engineer.Persistence\\Engineer.Persistence.csproj",
+      "projectUniqueName": "C:\\Users\\Steiner\\Documents\\Github\\RiaarhusAPI\\Engineer.Persistence\\Engineer.Persistence.csproj",
       "projectName": "Engineer.Persistence",
-      "projectPath": "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilBackend\\Engineer.Persistence\\Engineer.Persistence.csproj",
+      "projectPath": "C:\\Users\\Steiner\\Documents\\Github\\RiaarhusAPI\\Engineer.Persistence\\Engineer.Persistence.csproj",
       "packagesPath": "C:\\Users\\Steiner\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilBackend\\Engineer.Persistence\\obj\\",
+      "outputPath": "C:\\Users\\Steiner\\Documents\\Github\\RiaarhusAPI\\Engineer.Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4420,8 +4420,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilBackend\\Engineer.Domain\\Engineer.Domain.csproj": {
-              "projectPath": "C:\\Users\\Steiner\\Documents\\Github\\EngineeringCouncilBackend\\Engineer.Domain\\Engineer.Domain.csproj"
+            "C:\\Users\\Steiner\\Documents\\Github\\RiaarhusAPI\\Engineer.Domain\\Engineer.Domain.csproj": {
+              "projectPath": "C:\\Users\\Steiner\\Documents\\Github\\RiaarhusAPI\\Engineer.Domain\\Engineer.Domain.csproj"
             }
           }
         }

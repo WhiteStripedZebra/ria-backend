@@ -23,3 +23,13 @@ C:\Users\Steiner\Documents\Github\EngineeringCouncilBackend\Engineer.Domain\obj\
 C:\Users\Steiner\Documents\Github\EngineeringCouncilBackend\Engineer.Domain\obj\Debug\netcoreapp2.1\Engineer.Domain.AssemblyInfo.cs
 C:\Users\Steiner\Documents\Github\EngineeringCouncilBackend\Engineer.Domain\obj\Debug\netcoreapp2.1\Engineer.Domain.dll
 C:\Users\Steiner\Documents\Github\EngineeringCouncilBackend\Engineer.Domain\obj\Debug\netcoreapp2.1\Engineer.Domain.pdb
+C:\Users\Steiner\Documents\Github\EngineeringCouncilBackend\Engineer.Domain\obj\Debug\netcoreapp2.1\Engineer.Domain.csprojAssemblyReference.cache
+C:\Users\Steiner\Documents\Github\RiaarhusAPI\Engineer.Domain\bin\Debug\netcoreapp2.1\Engineer.Domain.deps.json
+C:\Users\Steiner\Documents\Github\RiaarhusAPI\Engineer.Domain\bin\Debug\netcoreapp2.1\Engineer.Domain.dll
+C:\Users\Steiner\Documents\Github\RiaarhusAPI\Engineer.Domain\bin\Debug\netcoreapp2.1\Engineer.Domain.pdb
+C:\Users\Steiner\Documents\Github\RiaarhusAPI\Engineer.Domain\obj\Debug\netcoreapp2.1\Engineer.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Steiner\Documents\Github\RiaarhusAPI\Engineer.Domain\obj\Debug\netcoreapp2.1\Engineer.Domain.AssemblyInfoInputs.cache
+C:\Users\Steiner\Documents\Github\RiaarhusAPI\Engineer.Domain\obj\Debug\netcoreapp2.1\Engineer.Domain.AssemblyInfo.cs
+C:\Users\Steiner\Documents\Github\RiaarhusAPI\Engineer.Domain\obj\Debug\netcoreapp2.1\Engineer.Domain.dll
+C:\Users\Steiner\Documents\Github\RiaarhusAPI\Engineer.Domain\obj\Debug\netcoreapp2.1\Engineer.Domain.pdb
+C:\Users\Steiner\Documents\Github\RiaarhusAPI\Engineer.Domain\obj\Debug\netcoreapp2.1\Engineer.Domain.csprojAssemblyReference.cache
