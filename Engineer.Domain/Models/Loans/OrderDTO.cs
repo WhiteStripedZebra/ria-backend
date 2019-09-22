@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Engineer.Domain.Entities;
+using Engineer.Domain.Enums;
 
 namespace Engineer.Domain.Models.Loans
 {
@@ -14,6 +15,7 @@ namespace Engineer.Domain.Models.Loans
         public string Name { get; set; }
         public string Email { get; set; }
         public string UniversityId { get; set; }
+        public OrderStatus Status { get; set; }
         public ICollection<OrderItemDTO> Products { get; set; }
     }
 }

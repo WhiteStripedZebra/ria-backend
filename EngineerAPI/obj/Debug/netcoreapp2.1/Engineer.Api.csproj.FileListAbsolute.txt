@@ -106,3 +106,5 @@ C:\Users\Steiner\Documents\Github\RiaarhusAPI\EngineerAPI\obj\Debug\netcoreapp2.
 C:\Users\Steiner\Documents\Github\RiaarhusAPI\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.dll
 C:\Users\Steiner\Documents\Github\RiaarhusAPI\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.xml
 C:\Users\Steiner\Documents\Github\RiaarhusAPI\EngineerAPI\obj\Debug\netcoreapp2.1\Engineer.Api.pdb
+C:\Users\Steiner\Documents\Github\RiaarhusAPI\EngineerAPI\bin\Debug\netcoreapp2.1\Services\Calendar\api-credentials.json
+C:\Users\Steiner\Documents\Github\RiaarhusAPI\EngineerAPI\bin\Debug\netcoreapp2.1\api-credentials.json

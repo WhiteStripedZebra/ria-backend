@@ -19,6 +19,26 @@ namespace Engineer.Persistence.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("Engineer.Domain.Entities.Club", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("ContactMail");
+
+                    b.Property<string>("ContactName");
+
+                    b.Property<DateTimeOffset>("CreatedAt");
+
+                    b.Property<string>("Description");
+
+                    b.Property<string>("Name");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Clubs");
+                });
+
             modelBuilder.Entity("Engineer.Domain.Entities.EngineerUser", b =>
                 {
                     b.Property<string>("Id")
@@ -96,6 +116,8 @@ namespace Engineer.Persistence.Migrations
                     b.Property<string>("OrderNumber");
 
                     b.Property<DateTimeOffset>("StartDate");
+
+                    b.Property<int>("Status");
 
                     b.Property<string>("UniversityId");
 

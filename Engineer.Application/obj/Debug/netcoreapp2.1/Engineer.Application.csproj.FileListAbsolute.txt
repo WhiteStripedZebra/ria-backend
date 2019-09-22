@@ -62,3 +62,6 @@ C:\Users\Steiner\Documents\Github\RiaarhusAPI\Engineer.Application\obj\Debug\net
 C:\Users\Steiner\Documents\Github\RiaarhusAPI\Engineer.Application\obj\Debug\netcoreapp2.1\Engineer.Application.csproj.CopyComplete
 C:\Users\Steiner\Documents\Github\RiaarhusAPI\Engineer.Application\obj\Debug\netcoreapp2.1\Engineer.Application.dll
 C:\Users\Steiner\Documents\Github\RiaarhusAPI\Engineer.Application\obj\Debug\netcoreapp2.1\Engineer.Application.pdb
+C:\Users\Steiner\Documents\Github\RiaarhusAPI\Engineer.Application\bin\Debug\netcoreapp2.1\Services\Calendar\api-credentials.json
+C:\Users\Steiner\Documents\Github\RiaarhusAPI\Engineer.Application\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Mvc.Core.dll
+C:\Users\Steiner\Documents\Github\RiaarhusAPI\Engineer.Application\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Mvc.Core.xml

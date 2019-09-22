@@ -9,6 +9,7 @@ namespace Engineer.Persistence
 {
     public class ApplicationDbContext : IdentityDbContext<EngineerUser>
     {
+        public DbSet<Club> Clubs { get; set; }
         public DbSet<ToDo> Tasks { get; set; }
         public DbSet<RefreshToken> RefreshTokens { get; set; }
         public DbSet<Product> Products { get; set; }

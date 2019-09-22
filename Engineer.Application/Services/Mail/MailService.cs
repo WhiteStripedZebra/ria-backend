@@ -43,7 +43,7 @@ namespace Engineer.Application.Services.Mail
             mail.Body = message;
             mail.IsBodyHtml = true;
 
-            await _smtpClient.SendMailAsync(mail);    
+            await _smtpClient.SendMailAsync(mail);
         }
 
 

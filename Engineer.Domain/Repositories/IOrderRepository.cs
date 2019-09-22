@@ -9,6 +9,8 @@ namespace Engineer.Domain.Repositories
     {
         Task<IEnumerable<Order>> GetOrdersAsync();
 
+        Task<IEnumerable<Order>> FindPaged(int page, int pageSize);
+
         Task<Order> GetOrderAsync(Guid id);
 
         void AddOrder(Order entity);

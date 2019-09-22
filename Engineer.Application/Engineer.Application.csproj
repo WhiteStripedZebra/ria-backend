@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Google.Apis.Calendar.v3" Version="1.41.1.1713" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.1.0" />
   </ItemGroup>
 
@@ -12,6 +13,18 @@
     <ProjectReference Include="..\Engineer.Domain\Engineer.Domain.csproj" />
     <ProjectReference Include="..\Engineer.Mappings\Engineer.Mapping.csproj" />
     <ProjectReference Include="..\Engineer.Persistence\Engineer.Persistence.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.AspNetCore.Mvc.Core">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.mvc.core\2.1.1\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Services\Calendar\api-credentials.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

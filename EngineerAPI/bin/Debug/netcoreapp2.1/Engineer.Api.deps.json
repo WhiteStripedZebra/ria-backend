@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "5cab850c935211ccf0ef9ac79355f8c7bde212c9"
+    "signature": "6e1c95710486e3dceecfcbb5fc89a59d1bc10c9a"
   },
   "compilationOptions": {
     "defines": [
@@ -75,6 +75,70 @@
         },
         "compile": {
           "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
+        }
+      },
+      "Google.Apis/1.41.1": {
+        "dependencies": {
+          "Google.Apis.Core": "1.41.1",
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.dll": {
+            "assemblyVersion": "1.41.1.0",
+            "fileVersion": "1.41.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.dll": {}
+        }
+      },
+      "Google.Apis.Auth/1.41.1": {
+        "dependencies": {
+          "Google.Apis": "1.41.1",
+          "Google.Apis.Core": "1.41.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll": {
+            "assemblyVersion": "1.41.1.0",
+            "fileVersion": "1.41.1.0"
+          },
+          "lib/netstandard2.0/Google.Apis.Auth.dll": {
+            "assemblyVersion": "1.41.1.0",
+            "fileVersion": "1.41.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll": {},
+          "lib/netstandard2.0/Google.Apis.Auth.dll": {}
+        }
+      },
+      "Google.Apis.Calendar.v3/1.41.1.1713": {
+        "dependencies": {
+          "Google.Apis": "1.41.1",
+          "Google.Apis.Auth": "1.41.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Calendar.v3.dll": {
+            "assemblyVersion": "1.41.1.1713",
+            "fileVersion": "1.41.1.1713"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.Calendar.v3.dll": {}
+        }
+      },
+      "Google.Apis.Core/1.41.1": {
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Core.dll": {
+            "assemblyVersion": "1.41.1.0",
+            "fileVersion": "1.41.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.Core.dll": {}
         }
       },
       "IdentityModel/3.10.10": {
@@ -1240,6 +1304,7 @@
           "Engineer.Domain": "1.0.0",
           "Engineer.Mapping": "1.0.0",
           "Engineer.Persistence": "1.0.0",
+          "Google.Apis.Calendar.v3": "1.41.1.1713",
           "System.IdentityModel.Tokens.Jwt": "5.2.4"
         },
         "runtime": {
@@ -3884,6 +3949,34 @@
       "sha512": "sha512-szI4yeRIM7GWe9JyekW0dKYehPB0t6M+I55fPeCebN6PhS7zQZa0eG3bgOnOx+eP3caSNoE7KEJs2rk7MLsh8w==",
       "path": "automapper.extensions.microsoft.dependencyinjection/7.0.0",
       "hashPath": "automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512"
+    },
+    "Google.Apis/1.41.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/gNhxyiCY66ElHrOG0jMg6l13++PXFn69ULoeDabA92z4tCMzTBToY2XuuZhcxHzROcAjiVWPpj03ZEJl7s5kg==",
+      "path": "google.apis/1.41.1",
+      "hashPath": "google.apis.1.41.1.nupkg.sha512"
+    },
+    "Google.Apis.Auth/1.41.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zsb5QnQVDaeU4rTnYcRJead+obLEsi+iJH/T12+zUzu7/r5Pg6PD/I8RW7aG3qJ6TLyLpKDKDgm/IyQ6G4qOFg==",
+      "path": "google.apis.auth/1.41.1",
+      "hashPath": "google.apis.auth.1.41.1.nupkg.sha512"
+    },
+    "Google.Apis.Calendar.v3/1.41.1.1713": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-npFauLeeTygi/PxHHCrmnJDSATVjLdVD/da7l9B9TZJdvyZ80Aiz7/Pu1KDXmJCdVsRUJKdRbLLewFH/i5KZ5w==",
+      "path": "google.apis.calendar.v3/1.41.1.1713",
+      "hashPath": "google.apis.calendar.v3.1.41.1.1713.nupkg.sha512"
+    },
+    "Google.Apis.Core/1.41.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6jZDk7VsnZGLXGREYdy+3v4Xvdtc6zJs9E4mkxmKC3d1B1NxK0fBX0Ir6/wFdmEt95cnoILRQVi2vNCisU6hIg==",
+      "path": "google.apis.core/1.41.1",
+      "hashPath": "google.apis.core.1.41.1.nupkg.sha512"
     },
     "IdentityModel/3.10.10": {
       "type": "package",

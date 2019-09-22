@@ -61,6 +61,7 @@ namespace Engineer.Application.Services.Authentication
 
             var claims = new List<Claim>
             {
+                new Claim("id", user.Id),
                 new Claim(JwtRegisteredClaimNames.Sub, user.Email),
                 new Claim(JwtRegisteredClaimNames.Jti, _options.JtiGenerator()),
                 new Claim(JwtRegisteredClaimNames.Iat, _options.IssuedAt.ToUnixTimeMilliseconds().ToString(), ClaimValueTypes.Integer64)

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Engineer.Domain.Entities;
+using Engineer.Domain.Enums;
 using Engineer.Domain.Repositories;
 using Engineer.Persistence;
 using Microsoft.EntityFrameworkCore;
@@ -26,6 +27,11 @@ namespace Engineer.Application.Repository
                 .ToListAsync();
         }
 
+        public async Task<IEnumerable<Order>> FindPaged(int page, int pageSize)
+        {
+            return await _context.Orders.Skip(page * pageSize).Take(pageSize).ToListAsync();
+        }
+
         public async Task<Order> GetOrderAsync(Guid id)
         {
             return await _context.Orders
@@ -42,6 +48,14 @@ namespace Engineer.Application.Repository
             }
 
             entity.CreatedAt = DateTimeOffset.Now;
+            entity.Status = OrderStatus.Appending;
+            entity.OrderNumber =
+                $"RIA-{entity.CreatedAt.Day}{entity.CreatedAt.Month}{entity.CreatedAt.Year}{entity.CreatedAt.Hour}{entity.CreatedAt.Minute}-{entity.UniversityId}";
+
+            foreach (var item in entity.Products)
+            {
+                item.Product = _context.Products.FirstOrDefault(p => p.Id == item.Product.Id);
+            }
 
             _context.Add(entity);
         }

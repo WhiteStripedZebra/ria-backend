@@ -6,6 +6,7 @@ using Engineer.Api.Configurations;
 using Engineer.Application.Repository;
 using Engineer.Application.Repository.Tasks;
 using Engineer.Application.Services.Authentication;
+using Engineer.Application.Services.Calendar;
 using Engineer.Application.Services.Mail;
 using Engineer.Domain.Entities;
 using Engineer.Domain.Repositories;
@@ -55,7 +56,10 @@ namespace Engineer.Api
             services.AddScoped<IJwtTokenService, JwtTokenService>();
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IOrderRepository, OrderRepository>();
+            services.AddScoped<IClubRepository, ClubRepository>();
+
             services.AddScoped<IMailService, MailService>();
+            services.AddScoped<IGoogleCalendarService, GoogleCalendarService>();
 
             services.AddJwtAuthentication(Configuration);
             services.AddAuthorizationPolicies();

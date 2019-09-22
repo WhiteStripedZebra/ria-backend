@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Net;
-using System.Net.Mail;
-using System.Text;
+using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
+using Engineer.Application.Services.Calendar;
 using Engineer.Application.Services.Mail;
+using Engineer.Application.Utilities;
 using Engineer.Domain.Entities;
+using Engineer.Domain.Enums;
 using Engineer.Domain.Models.Loans;
 using Engineer.Domain.Repositories;
 using Microsoft.AspNetCore.Http;
@@ -24,20 +25,22 @@ namespace Engineer.Api.Controllers
         private readonly IMapper _mapper;
         private readonly ILogger<OrdersController> _log;
         private readonly IMailService _mailService;
+        private readonly IGoogleCalendarService _googleCalendar;
 
-        public OrdersController(IOrderRepository repository, IMapper mapper, ILogger<OrdersController> log, IMailService mailService)
+        public OrdersController(IOrderRepository repository, IMapper mapper, ILogger<OrdersController> log, IMailService mailService, IGoogleCalendarService googleCalendar)
         {
             _repository = repository;
             _mapper = mapper;
             _log = log;
             _mailService = mailService;
+            _googleCalendar = googleCalendar;
         }
 
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<ActionResult<Order[]>> GetOrders()
+        public async Task<ActionResult<Order[]>> GetOrders(int page = 0, int pageSize = 5)
         {
             try
             {
@@ -48,7 +51,9 @@ namespace Engineer.Api.Controllers
                     return NotFound();
                 }
 
-                return Ok(_mapper.Map<IEnumerable<Order>, IEnumerable<OrderDTO>>(orderEntities));
+                var orders = _mapper.Map<IEnumerable<Order>, IEnumerable<OrderDTO>>(orderEntities);
+
+                return Ok(orders.Skip(page * pageSize).Take(pageSize));
             }
             catch (Exception ex)
             {
@@ -82,6 +87,9 @@ namespace Engineer.Api.Controllers
         [HttpPost]
         public async Task<IActionResult> AddOrder([FromBody] OrderDTO order)
         {
+
+            // TO DO: Check if order is coming from a member in database - else delete it
+
             try
             {
                 if (order == null)
@@ -95,7 +103,7 @@ namespace Engineer.Api.Controllers
 
                 await _repository.SaveChangesAsync();
 
-                await _mailService.SendNewOrderMailAsync(order.Email, entity);
+                _mailService.SendNewOrderMailAsync(order.Email, entity);
 
                 return CreatedAtAction(nameof(AddOrder), new {id = entity.Id}, entity);
             }
@@ -104,6 +112,33 @@ namespace Engineer.Api.Controllers
                 _log.LogError($"Failed to add new order: {ex}");
                 return BadRequest();
             }
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateOrderStatus(Guid id, [FromBody] OrderStatusDTO order)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+
+            var entity = await _repository.GetOrderAsync(id);
+
+            if (entity == null)
+            {
+                return NotFound();
+            }
+
+            entity.Status = order.status;
+
+            if (order.status == OrderStatus.Approved)
+            {
+                _googleCalendar.CreateLoanOrder(_mapper.Map<Order, OrderDTO>(entity));
+            }
+
+            await _repository.UpdateOrder(entity);
+
+            return NoContent();
         }
     }
 }

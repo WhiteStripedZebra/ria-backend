@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using Engineer.Domain.Enums;
 
 namespace Engineer.Domain.Entities
 {
@@ -15,6 +16,7 @@ namespace Engineer.Domain.Entities
         public string Name { get; set; }
         public string Email { get; set; }
         public string UniversityId { get; set; }
+        public OrderStatus Status { get; set; }
         public ICollection<OrderItem> Products { get; set; }
     }
 }

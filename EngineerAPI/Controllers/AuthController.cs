@@ -28,7 +28,7 @@ namespace Engineer.Api.Controllers
             _context = context;
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("token")]
         public async Task<ActionResult<TokenResponseDTO>> GetToken(LoginDTO credentials)
         {

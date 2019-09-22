@@ -35,4 +35,10 @@
     <ProjectReference Include="..\Engineer.Persistence\Engineer.Persistence.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="api-credentials.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
